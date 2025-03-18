@@ -15,17 +15,17 @@
             </div>
         </div>
         <div>
-            <div class="h-[496px] 2xl:h-[651px] 2xl:w-[1113px] w-[848px] rounded-[24px] relative">
+            <div class="h-[496px] 2xl:h-[651px] 2xl:w-[1113px] w-[848px] rounded-[24px] relative overflow-hidden">
                 <iframe id="youtubePlayer" 
-                    class="w-full h-full rounded-[24px] hidden" 
+                    class="w-full h-full rounded-[24px] absolute top-0 left-0 transition duration-300 ease-in-out opacity-0" 
                     title="YouTube video player" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     referrerpolicy="strict-origin-when-cross-origin" 
                     allowfullscreen>
                 </iframe>
-                <div id="thumbnailContainer" class="w-full h-full bg-[url(/assets/image/image2.png)] bg-cover">
-                    <div class="flex items-center bg-[#ffffff] gap-x-3 2xl:gap-x-4 w-max pt-2 2xl:pt-3 pb-2 2xl:pb-3 pl-3 2xl:pl-4 pr-5 2xl:pr-8 rounded-[70px] absolute top-5 left-5 2xl:top-6 2xl:left-6">
+                <div id="thumbnailContainer" class="w-full h-full bg-[url(/assets/image/image2.png)] bg-cover absolute top-0 left-0 transition duration-300 ease-in-out opacity-100">
+                    <div id="competencyLabel" class="flex items-center bg-[#ffffff] gap-x-3 2xl:gap-x-4 w-max pt-2 2xl:pt-3 pb-2 2xl:pb-3 pl-3 2xl:pl-4 pr-5 2xl:pr-8 rounded-[70px] absolute top-5 left-5 2xl:top-6 2xl:left-6 transition duration-300 ease-in-out translate-y-0 opacity-100">
                         <img src="/assets/icon/konsentrasi.svg" alt="" class="w-[40px] 2xl:w-[52px]">
                         <p class="font-manrope text-[18px] 2xl:text-[24px] font-medium text-[#111111]">Kompetensi Keahlian</p>
                     </div>
@@ -39,11 +39,23 @@
     function playVideo() {
         const thumbnail = document.getElementById('thumbnailContainer');
         const iframe = document.getElementById('youtubePlayer');
+        const competencyLabel = document.getElementById('competencyLabel');
         
-        thumbnail.classList.add('hidden');
-        iframe.classList.remove('hidden');
+        thumbnail.classList.remove('opacity-100');
+        thumbnail.classList.add('opacity-0');
+        
+        competencyLabel.classList.remove('translate-x-0', 'opacity-100');
+        competencyLabel.classList.add('-translate-x-5', 'opacity-0');
+        
+        iframe.classList.remove('opacity-0');
+        iframe.classList.add('opacity-100');
+
         if (!iframe.src) {
             iframe.src = "https://www.youtube.com/embed/9VNvxo9Ze2Q?si=5Jkbb5gGzvscn-AC&autoplay=1";
         }
+
+        setTimeout(() => {
+            thumbnail.classList.add('hidden');
+        }, 300); 
     }
 </script>
