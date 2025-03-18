@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,8 +24,34 @@
     </script>
     @livewireStyles
 </head>
-<body class="bg-[#ffffff]">
+<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain">
     @include('components.navbar')
-    @yield('content')
+    @include('components.pages.beranda')
+    @include('components.pages.tentang')
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const targetBeranda = document.querySelector('#beranda');
+        const elementBeranda = document.getElementById('nav-beranda');
+        const targetTentang = document.querySelector('#tentang');
+        const elementTentang = document.getElementById('nav-tentang');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                const element = entry.target === targetBeranda ? elementBeranda : elementTentang;
+                
+                if (entry.isIntersecting) {
+                    element.classList.add('text-[#111111]', 'font-bold');
+                } else {
+                    element.classList.remove('text-[#111111]', 'font-bold');
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        if (targetBeranda) observer.observe(targetBeranda);
+        if (targetTentang) observer.observe(targetTentang);
+    });
+</script>
 </html>
