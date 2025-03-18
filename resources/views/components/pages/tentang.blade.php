@@ -6,7 +6,7 @@
         </div>
         <p class="m-0 ml-auto mr-auto font-manrope text-[#111111] text-center text-[32px] 2xl:text-[44px] w-[1057px] 2xl:w-[1402px]">SMK Negeri 7 Semarang diresmikan pada tanggal 7 Juni 1971 oleh Presiden Republik Indonesia -Suharto, dengan nama Proyek Perintis <span class="opacity-60">Sekolah Teknologi Menengah Pembangunan Semarang dengan lama pendidikan 4 (empat) tahun.</span></p>
     </div>
-    <div class="flex w-max gap-x-7 2xl:gap-x-8 ml-auto mr-auto mb-20">
+    <div class="flex w-max gap-x-7 2xl:gap-x-8 ml-auto mr-auto mb-20 2xl:mb-25">
         <div class="bg-[url(/assets/image/masjid.png)] w-[404px] 2xl:w-[535px] h-[496px] 2xl:h-[651px] bg-cover relative">
             <img src="/assets/icon/masjid.png" alt="" class="absolute top-5 2xl:top-6 w-[56px] 2xl:w-[76px] left-5 2xl:left-6">
             <div class="absolute bottom-0 bg-[#ffffff] rounded-[21px] pl-3 2xl:pl-4 pt-3 2xl:pt-4 pb-3 2xl:pb-4 pr-6.5 ml-5 mr-5 mb-5">
