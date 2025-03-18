@@ -15,10 +15,9 @@
             </div>
         </div>
         <div>
-            <div class="h-[496px] 2xl:h-[651px] 2xl:w-[1113px] w-[848px] relative">
+            <div class="h-[496px] 2xl:h-[651px] 2xl:w-[1113px] w-[848px] rounded-[24px] relative">
                 <iframe id="youtubePlayer" 
                     class="w-full h-full rounded-[24px] hidden" 
-                    src="https://www.youtube.com/embed/9VNvxo9Ze2Q?si=5Jkbb5gGzvscn-AC&autoplay=1" 
                     title="YouTube video player" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -38,9 +37,13 @@
 </section>
 <script>
     function playVideo() {
-        document.getElementById('thumbnailContainer').classList.add('hidden');
+        const thumbnail = document.getElementById('thumbnailContainer');
         const iframe = document.getElementById('youtubePlayer');
+        
+        thumbnail.classList.add('hidden');
         iframe.classList.remove('hidden');
-        iframe.src = iframe.src;
+        if (!iframe.src) {
+            iframe.src = "https://www.youtube.com/embed/9VNvxo9Ze2Q?si=5Jkbb5gGzvscn-AC&autoplay=1";
+        }
     }
 </script>
