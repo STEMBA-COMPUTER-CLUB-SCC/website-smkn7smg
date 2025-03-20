@@ -25,9 +25,10 @@
     @livewireStyles
 </head>
 <body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain">
-    @include('components.navbar')
-    @include('components.pages.beranda')
-    @include('components.pages.tentang')
+    @livewire('navbar')
+    @livewire('beranda')
+    @livewire('tentang')
+    @livewireStyles
 </body>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
