@@ -5,8 +5,8 @@
     </div>
     <div class="flex items-center gap-x-15">
         <div class="font-manrope flex w-max gap-x-8 items-center text-[#707070] font-normal text-[16px]">
-            <a id="nav-beranda" class="" href="#">Beranda</a>
-            <a id="nav-tentang" class="" href="#tentang">Tentang</a>
+            <a id="nav-beranda" class="transition-all duration-100" href="#" wire:transition>Beranda</a>
+            <a id="nav-tentang" class="transition-all duration-100" href="#tentang" wire:transition>Tentang</a>
             <div class="flex items-center gap-x-2">
                 <p>Jurusan</p>
                 <img src="/assets/icon/arrow-down.svg" alt="" class="w-[20px]">

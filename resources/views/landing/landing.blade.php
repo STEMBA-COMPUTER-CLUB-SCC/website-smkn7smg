@@ -42,9 +42,13 @@
                 const element = entry.target === targetBeranda ? elementBeranda : elementTentang;
                 
                 if (entry.isIntersecting) {
-                    element.classList.add('text-[#111111]', 'font-bold');
+                    setTimeout(() => {
+                        element.classList.add('text-[#111111]', 'font-bold');
+                    }, 10); 
                 } else {
-                    element.classList.remove('text-[#111111]', 'font-bold');
+                    setTimeout(() => {
+                        element.classList.remove('text-[#111111]', 'font-bold');
+                    }, 10);
                 }
             });
         }, {
