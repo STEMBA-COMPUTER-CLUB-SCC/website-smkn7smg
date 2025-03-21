@@ -31,6 +31,7 @@
     @livewire('landingjurusan')
     @livewire('landingberita')
     @livewire('landingprestasi')
+    @livewire('landingkerjasama')
     @livewireStyles
 </body>
 <script>
