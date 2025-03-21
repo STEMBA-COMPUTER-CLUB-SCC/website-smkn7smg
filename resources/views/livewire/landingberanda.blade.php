@@ -1,5 +1,5 @@
 <section id="beranda" class="border border-transparent">
-    <div class="ml-auto mr-auto pl-20 max-w-[1780px] pr-23 2xl:pr-30 flex justify-between mb-20 mt-30">
+    <div class="ml-auto mr-auto w-max flex gap-x-16.5 mb-20 mt-30">
         <div class="w-max gap-y-[115px] 2xl:gap-y-[200px] flex flex-col">
             <div>
                 <div class="flex bg-[#F7F7F7] text-[16px] m-0 mb-5 font-manrope border border-[#ebebeb] w-max rounded-[80px] items-center pl-1.5 pt-1.5 pb-1.5 pr-4 gap-x-2">

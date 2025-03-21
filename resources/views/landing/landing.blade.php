@@ -30,6 +30,7 @@
     @livewire('landingtentang')
     @livewire('landingjurusan')
     @livewire('landingberita')
+    @livewire('landingprestasi')
     @livewireStyles
 </body>
 <script>
@@ -42,6 +43,8 @@
     const elementJurusan = document.getElementById('nav-jurusan').querySelector('p');
     const targetBerita = document.querySelector('#berita');
     const elementBerita = document.getElementById('nav-berita');
+    const targetPrestasi = document.querySelector('#prestasi');
+    const elementPrestasi = document.getElementById('nav-prestasi');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -54,6 +57,8 @@
                 element = elementJurusan;
             } else if (entry.target === targetBerita) {
                 element = elementBerita;
+            } else if (entry.target === targetPrestasi) {
+                element = elementPrestasi;
             } else {
                 return;
             }
@@ -74,6 +79,7 @@
     if (targetTentang) observer.observe(targetTentang);
     if (targetJurusan) observer.observe(targetJurusan);
     if (targetBerita) observer.observe(targetBerita);
+    if (targetPrestasi) observer.observe(targetPrestasi);
 });
 </script>
 </html>

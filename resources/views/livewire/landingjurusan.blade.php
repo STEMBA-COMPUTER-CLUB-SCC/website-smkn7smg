@@ -1,7 +1,9 @@
 <section id="jurusan" class="border border-transparent">
-    <div class="font-manrope mt-30 flex items-center gap-x-2 bg-[#F7F7F7] border border-[#EBEBEB] w-max pr-4 pl-1.5 pt-1.5 pb-1.5 rounded-[80px] ml-20 mb-10">
-        <p class="bg-[#111111] text-[#ffffff] font-semibold text-[16px] pt-1 pb-1 pl-3 pr-3 border border-[#ebebeb] rounded-[80px]">JURUSAN</p>
-        <p class='text-[#525252] font-normal text-[16px]'>KONSENTRASI KEAHLIAN</p>
+    <div class='w-[1280px] mt-30 mb-10 ml-auto mr-auto'>
+        <div class="font-manrope flex items-center gap-x-2 bg-[#F7F7F7] border border-[#EBEBEB] w-max pr-4 pl-1.5 pt-1.5 pb-1.5 rounded-[80px]">
+            <p class="bg-[#111111] text-[#ffffff] font-semibold text-[16px] pt-1 pb-1 pl-3 pr-3 border border-[#ebebeb] rounded-[80px]">JURUSAN</p>
+            <p class='text-[#525252] font-normal text-[16px]'>KONSENTRASI KEAHLIAN</p>
+        </div>
     </div>
     <div class='w-max flex font-manrope h-[440px] gap-x-14 ml-auto mr-auto mb-14'>
         <img src="/assets/image/jurusan1.png" class='w-[608px] h-[440px]' alt="">
