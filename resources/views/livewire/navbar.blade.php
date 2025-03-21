@@ -43,8 +43,8 @@
                 </a>
             </div>
         </div>
-        <p class="cursor-pointer" wire:click="view('berita')">Berita</p>
-        <p class="cursor-pointer" wire:click="view('prestasi')">Prestasi</p>
+        <p id="nav-berita" class="cursor-pointer" wire:click="view('berita')">Berita</p>
+        <p id="nav-prestasi" class="cursor-pointer" wire:click="view('prestasi')">Prestasi</p>
         </div>
         <p class="bg-[#1152D9] pt-2.5 pb-2.5 pl-6 pr-6 text-[#ffffff] rounded-[42px] font-manrope text-[16px] font-semibold">Hubungi Kami</p>
     </div>
