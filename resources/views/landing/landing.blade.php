@@ -26,37 +26,48 @@
 </head>
 <body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain">
     @livewire('navbar')
-    @livewire('beranda')
-    @livewire('tentang')
+    @livewire('landingberanda')
+    @livewire('landingtentang')
+    @livewire('landingjurusan')
     @livewireStyles
 </body>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const targetBeranda = document.querySelector('#beranda');
-        const elementBeranda = document.getElementById('nav-beranda');
-        const targetTentang = document.querySelector('#tentang');
-        const elementTentang = document.getElementById('nav-tentang');
+    const targetBeranda = document.querySelector('#beranda');
+    const elementBeranda = document.getElementById('nav-beranda');
+    const targetTentang = document.querySelector('#tentang');
+    const elementTentang = document.getElementById('nav-tentang');
+    const targetJurusan = document.querySelector('#jurusan');
+    const elementJurusan = document.getElementById('nav-jurusan').querySelector('p');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                const element = entry.target === targetBeranda ? elementBeranda : elementTentang;
-                
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        element.classList.add('text-[#111111]', 'font-bold');
-                    }, 10); 
-                } else {
-                    setTimeout(() => {
-                        element.classList.remove('text-[#111111]', 'font-bold');
-                    }, 10);
-                }
-            });
-        }, {
-            threshold: 0.3
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            let element;
+            if (entry.target === targetBeranda) {
+                element = elementBeranda;
+            } else if (entry.target === targetTentang) {
+                element = elementTentang;
+            } else if (entry.target === targetJurusan) {
+                element = elementJurusan;
+            } else {
+                return;
+            }
+
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    element.classList.add('text-[#111111]', 'font-bold');
+                }, 10);
+            } else {
+                setTimeout(() => {
+                    element.classList.remove('text-[#111111]', 'font-bold');
+                }, 10);
+            }
         });
+    }, { threshold: 0.3 });
 
-        if (targetBeranda) observer.observe(targetBeranda);
-        if (targetTentang) observer.observe(targetTentang);
-    });
+    if (targetBeranda) observer.observe(targetBeranda);
+    if (targetTentang) observer.observe(targetTentang);
+    if (targetJurusan) observer.observe(targetJurusan);
+});
 </script>
 </html>
