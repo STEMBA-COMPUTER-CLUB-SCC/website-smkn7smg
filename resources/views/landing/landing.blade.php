@@ -29,6 +29,7 @@
     @livewire('landingberanda')
     @livewire('landingtentang')
     @livewire('landingjurusan')
+    <!-- @livewire('landingberita') -->
     @livewireStyles
 </body>
 <script>

@@ -5,48 +5,46 @@
     </div>
     <div class="flex items-center gap-x-15">
         <div class="relative font-manrope flex w-max gap-x-8 items-center text-[#707070] font-normal text-[16px]">
-            <p id="nav-beranda" class="transition-all duration-100 cursor-pointer {{ $onView == 'beranda' ? 'text-[#111111] font-bold' : '' }}" wire:transition wire:click="view('beranda')">Beranda</p>
-            <p id="nav-tentang" class="transition-all duration-100 cursor-pointer {{ $onView == 'tentang' ? 'text-[#111111] font-bold' : '' }}" wire:transition wire:click="view('tentang')">Tentang</p>
-            <div wire:click="showNavJurusan">
-                <button id="nav-jurusan" class="transition-all duration-100" wire:transition>
-                    <div class="flex items-center gap-x-2">
-                        <p class="{{ $onView == 'jurusan' ? 'text-[#111111] font-bold' : '' }}">Jurusan</p>
-                        <img src="/assets/icon/arrow-down.svg" alt="" class="w-[20px] {{ $showAllNavJurusan ? 'rotate-180' : 'rotate-0' }} transition-transform duration-300">
-                    </div>
-                </button>
-            </div>
-            <div class="absolute left-[190px] w-[366px] h-[152px] top-10 grid grid-cols-2 transition-all duration-300 ease-in-out {{ $showAllNavJurusan ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none' }}">
-                <a href="" class="group flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] justify-between px-3 py-2.5">
+        <p id="nav-beranda" class="transition-all duration-100 cursor-pointer" wire:click="view('beranda')">Beranda</p>
+        <p id="nav-tentang" class="transition-all duration-100 cursor-pointer" wire:click="view('tentang')">Tentang</p>
+        <div class="relative group">
+            <button id="nav-jurusan" class="transition-all duration-100 flex items-center gap-x-2" wire:click="view('jurusan')">
+                <p>Jurusan</p>
+                <img src="/assets/icon/arrow-down.svg" alt="" class="w-[20px] transition-transform duration-300 group-hover:rotate-180">
+            </button>
+            <div class="absolute left-0 w-[366px] h-auto top-10 grid grid-cols-2 transition-all duration-300 ease-in-out opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
                     <p>PPLG</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover:opacity-100">
+                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
                 </a>
-                <a href="" class="group flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] justify-between px-3 py-2.5">
+                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
                     <p>KPBS</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover:opacity-100">
+                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
                 </a>
-                <a href="" class='group flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] justify-between px-3 py-2.5'>
+                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
                     <p>TKP</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover:opacity-100">
+                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
                 </a>
-                <a href="" class='group flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] justify-between px-3 py-2.5'>
+                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
                     <p>TO</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover:opacity-100">
+                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
                 </a>
-                <a href="" class='group flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] justify-between px-3 py-2.5'>
+                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
                     <p>TE</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover:opacity-100">
+                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
                 </a>
-                <a href="" class='group flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] justify-between px-3 py-2.5'>
+                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
                     <p>TPFL</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover:opacity-100">
+                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
                 </a>
-                <a href="" class='group flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] justify-between px-3 py-2.5'>
+                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
                     <p>TK</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover:opacity-100">
+                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
                 </a>
             </div>
-            <p class="cursor-pointer {{ $onView == 'berita' ? 'text-[#111111] font-bold' : '' }}" wire:click="view('berita')">Berita</p>
-            <p class="cursor-pointer {{ $onView == 'prestasi' ? 'text-[#111111] font-bold' : '' }}" wire:click="view('prestasi')">Prestasi</p>
+        </div>
+        <p class="cursor-pointer" wire:click="view('berita')">Berita</p>
+        <p class="cursor-pointer" wire:click="view('prestasi')">Prestasi</p>
         </div>
         <p class="bg-[#1152D9] pt-2.5 pb-2.5 pl-6 pr-6 text-[#ffffff] rounded-[42px] font-manrope text-[16px] font-semibold">Hubungi Kami</p>
     </div>
