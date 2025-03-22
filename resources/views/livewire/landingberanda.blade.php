@@ -13,12 +13,12 @@
                 </a>
             </div>
             <div class="flex items-center">
-                <img class="w-[120px] h-[40px]" src="/assets/icon/Statistic-Container.svg" alt="">
+                <img loading="lazy" draggable="false" class="w-[120px] h-[40px]" src="/assets/icon/Statistic-Container.svg" alt="">
                 <p class="font-manrope text-[14px] w-[287px]"><b>100+ Industri</b> <span class="text-[#726B7C]">yang telah bekerja sama dengan SMK Negeri 7 Semarang.</span></p>
             </div>
         </div>
         <div class="w-max h-max relative">
-            <img class="w-[466px] 2xl:w-[646px] m-0 mb-4" src="/assets/image/image1.png" alt="">
+            <img loading="lazy" draggable="false" class="w-[466px] 2xl:w-[646px] m-0 mb-4" src="/assets/image/image1.png" alt="">
             <div class="flex flex-col absolute bottom-16 right-16 2xl:right-[78px] gap-y-2.5">
                 <p class="pt-3 2xl:pt-4 pb-3 2xl:pb-4 pl-4 2xl:pl-6 pr-4 2xl:pr-6 rounded-[60px] font-manrope font-medium text-[16px] 2xl:text-[22px] w-[430px] 2xl:w-[587px] bg-[#FFFFFF] drop-shadow-lg relative right-14 2xl:right-[78px]">📗 Peningkatan Literasi dengan Perpustakaan Digital</p>
                 <p class="pt-3 2xl:pt-4 pb-3 2xl:pb-4 pl-4 2xl:pl-6 pr-4 2xl:pr-6 rounded-[60px] font-manrope font-medium text-[16px] 2xl:text-[22px] w-[430px] 2xl:w-[600px] bg-[#FFFFFF] drop-shadow-lg">🧔 Ketahanan Sekolah dengan Pembentukan Karakter</p>
