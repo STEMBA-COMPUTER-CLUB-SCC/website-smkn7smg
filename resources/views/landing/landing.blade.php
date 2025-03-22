@@ -66,13 +66,9 @@
             }
 
             if (entry.isIntersecting) {
-                setTimeout(() => {
-                    element.classList.add('text-[#111111]', 'font-bold');
-                }, 10);
+                element.classList.add('text-[#111111]', 'font-bold');
             } else {
-                setTimeout(() => {
-                    element.classList.remove('text-[#111111]', 'font-bold');
-                }, 10);
+                element.classList.remove('text-[#111111]', 'font-bold');
             }
         });
     }, { threshold: 0.3 });

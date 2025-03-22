@@ -5,46 +5,56 @@
     </div>
     <div class="flex items-center gap-x-15">
         <div class="relative font-manrope flex w-max gap-x-8 items-center text-[#707070] font-normal text-[16px]">
-        <p id="nav-beranda" class="transition-all duration-100 cursor-pointer" wire:click="view('beranda')">Beranda</p>
-        <p id="nav-tentang" class="transition-all duration-100 cursor-pointer" wire:click="view('tentang')">Tentang</p>
-        <div class="relative group">
-            <button id="nav-jurusan" class="transition-all duration-100 flex items-center gap-x-2" wire:click="view('jurusan')">
-                <p>Jurusan</p>
-                <img src="/assets/icon/arrow-down.svg" alt="" class="w-[20px] transition-transform duration-300 group-hover:rotate-180">
-            </button>
-            <div class="absolute left-0 w-[366px] h-auto top-10 grid grid-cols-2 transition-all duration-300 ease-in-out opacity-0 invisible group-hover:opacity-100 group-hover:visible">
-                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
-                    <p>PPLG</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
+            <a href="#">
+                <p id="nav-beranda" class="transition-all duration-300 ease-in-out cursor-pointer">Beranda</p>
+            </a>
+            <a href="#tentang">
+                <p id="nav-tentang" class="transition-all duration-300 ease-in-out cursor-pointer">Tentang</p>
+            </a>
+            <div class="relative group">
+                <a href="#jurusan">
+                    <button id="nav-jurusan" class="flex items-center gap-x-2">
+                        <p class="transition-all duration-300 ease-in-out">Jurusan</p>
+                        <img src="/assets/icon/arrow-down.svg" alt="" class="w-[20px] transition-transform duration-300 ease-in-out group-hover:rotate-180">
+                    </button>
                 </a>
-                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
-                    <p>KPBS</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
-                </a>
-                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
-                    <p>TKP</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
-                </a>
-                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
-                    <p>TO</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
-                </a>
-                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
-                    <p>TE</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
-                </a>
-                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
-                    <p>TPFL</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
-                </a>
-                <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
-                    <p>TK</p>
-                    <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
-                </a>
+                <div class="absolute left-0 w-[366px] h-auto top-10 grid grid-cols-2 transition-all duration-300 ease-in-out opacity-0 invisible group-hover:opacity-100 group-hover:visible">
+                    <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
+                        <p>PPLG</p>
+                        <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
+                    </a>
+                    <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
+                        <p>KPBS</p>
+                        <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
+                    </a>
+                    <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
+                        <p>TKP</p>
+                        <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
+                    </a>
+                    <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
+                        <p>TO</p>
+                        <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
+                    </a>
+                    <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
+                        <p>TE</p>
+                        <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
+                    </a>
+                    <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
+                        <p>TPFL</p>
+                        <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
+                    </a>
+                    <a href="" class="group/dropmenu flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
+                        <p>TK</p>
+                        <img src="/assets/icon/arrow-down.svg" alt="" class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100">
+                    </a>
+                </div>
             </div>
-        </div>
-        <p id="nav-berita" class="cursor-pointer" wire:click="view('berita')">Berita</p>
-        <p id="nav-prestasi" class="cursor-pointer" wire:click="view('prestasi')">Prestasi</p>
+            <a href="#berita">
+                <p id="nav-berita" class="transition-all duration-300 ease-in-out cursor-pointer">Berita</p>
+            </a>
+            <a href="#prestasi">
+                <p id="nav-prestasi" class="transition-all duration-300 ease-in-out cursor-pointer">Prestasi</p>
+            </a>
         </div>
         <p class="bg-[#1152D9] pt-2.5 pb-2.5 pl-6 pr-6 text-[#ffffff] rounded-[42px] font-manrope text-[16px] font-semibold">Hubungi Kami</p>
     </div>
@@ -61,8 +71,4 @@
             }
         });
     });
-
-    @this.watch('onView', (value) => {
-            console.log('Current onView:', value);
-        });
 </script>
