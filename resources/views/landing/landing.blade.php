@@ -32,6 +32,7 @@
     @livewire('landingberita')
     @livewire('landingprestasi')
     @livewire('landingkerjasama')
+    @livewire('footer')
     @livewireStyles
 </body>
 <script>
