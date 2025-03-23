@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <p class='w-full font-manrope font-medium text-[16px] border border-t-[#ECECED] border-b-transparent border-l-transparent border-r-transparent pt-3 text-[#6B7280] text-center'>Copyright © 2025 STEMBASE Enterprises LTD.</p>
+            <p class='w-full font-manrope font-medium text-[16px] border border-t-[#ECECED] border-b-transparent border-l-transparent border-r-transparent pt-3 text-[#6B7280] text-center'>Copyright © 2025 Stemba Computer Club (SCC).</p>
         </div>
     </div>
 </section>

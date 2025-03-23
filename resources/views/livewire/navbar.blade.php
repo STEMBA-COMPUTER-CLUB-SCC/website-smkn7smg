@@ -5,14 +5,14 @@
     </div>
     <div class="flex items-center gap-x-15">
         <div class="relative font-manrope flex w-max gap-x-8 items-center text-[#707070] font-normal text-[16px]">
-            <a href="#">
+            <a href="/#">
                 <p id="nav-beranda" class="transition-all duration-300 ease-in-out cursor-pointer">Beranda</p>
             </a>
-            <a href="#tentang">
+            <a href="/#tentang">
                 <p id="nav-tentang" class="transition-all duration-300 ease-in-out cursor-pointer">Tentang</p>
             </a>
             <div class="relative group">
-                <a href="#jurusan">
+                <a href="/#jurusan">
                     <button id="nav-jurusan" class="flex items-center gap-x-2">
                         <p class="transition-all duration-300 ease-in-out">Jurusan</p>
                         <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt="" class="w-[20px] transition-transform duration-300 ease-in-out group-hover:rotate-180">
@@ -49,10 +49,10 @@
                     </a>
                 </div>
             </div>
-            <a href="#berita">
+            <a href="/#berita">
                 <p id="nav-berita" class="transition-all duration-300 ease-in-out cursor-pointer">Berita</p>
             </a>
-            <a href="#prestasi">
+            <a href="/#prestasi">
                 <p id="nav-prestasi" class="transition-all duration-300 ease-in-out cursor-pointer">Prestasi</p>
             </a>
         </div>
