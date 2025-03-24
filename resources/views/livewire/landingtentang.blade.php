@@ -1,17 +1,19 @@
 <section id="tentang" class="border border-transparent">
     <div class="mt-30 flex flex-col gap-y-10 w-max ml-auto mr-auto mb-14 2xl:mb-[76px]">
-        <div class="ml-auto mr-auto flex bg-[#F7F7F7] text-[16px] m-0 font-manrope border border-[#ebebeb] w-max rounded-[80px] items-center pl-1.5 pt-1.5 pb-1.5 pr-4 gap-x-2">
+        <div id="judulTentang" 
+            class="sectionTentang ml-auto mr-auto flex bg-[#F7F7F7] text-[16px] m-0 font-manrope border border-[#ebebeb] w-max 
+                rounded-[80px] items-center pl-1.5 pt-1.5 pb-1.5 pr-4 gap-x-2 
+                opacity-0 transition-all duration-500 ease-in-out">
             <p class="bg-[#111111] text-[#FFFFFF] font-semibold border border-[#ebebeb] pt-1 pb-1 pl-3 pr-3 rounded-[80px]">TENTANG</p>
             <p class="text-[#525252] font-normal">PROFIL SMKN 7 SEMARANG</p>
         </div>
-        <p class="m-0 ml-auto mr-auto font-manrope text-[#111111] text-center text-[32px] 2xl:text-[44px] w-[1057px] 2xl:w-[1402px]">
+        <p class="deskripsiTentang m-0 ml-auto opacity-0 mr-auto font-manrope text-[#111111] text-center text-[32px] 2xl:text-[44px] w-[1057px] 2xl:w-[1402px]">
             SMK Negeri 7 Semarang diresmikan pada tanggal 7 Juni 1971 oleh Presiden Republik Indonesia -Suharto, dengan nama Proyek Perintis 
             <span class="opacity-60">Sekolah Teknologi Menengah Pembangunan Semarang dengan lama pendidikan 4 (empat) tahun.</span>
         </p>
     </div>
-
     <div class="flex w-max gap-x-7 2xl:gap-x-8 ml-auto mr-auto mb-20 2xl:mb-25">
-        <div class="bg-[url(/assets/image/masjid.png)] w-[404px] 2xl:w-[535px] h-[496px] 2xl:h-[651px] bg-cover relative">
+        <div class="cardMasjidTentang opacity-0 bg-[url(/assets/image/masjid.png)] w-[404px] 2xl:w-[535px] h-[496px] 2xl:h-[651px] bg-cover relative">
             <img loading="lazy" draggable="false" src="/assets/icon/masjid.png" alt="" class="absolute top-5 2xl:top-6 w-[56px] 2xl:w-[76px] left-5 2xl:left-6">
             <div class="absolute bottom-0 bg-[#ffffff] rounded-[21px] pl-3 2xl:pl-4 pt-3 2xl:pt-4 pb-3 2xl:pb-4 pr-6.5 ml-5 mr-5 mb-5">
                 <p class="font-manrope text-[18px] 2xl:text-[24px] font-medium text-[#111111] m-0 mb-0.5 2xl:mb-2">
@@ -22,8 +24,7 @@
                 </p>
             </div>
         </div>
-
-        <div>
+        <div class='cardKompetensiTentang opacity-0 w-max h-max'>
             <div class="h-[496px] 2xl:h-[651px] 2xl:w-[1113px] w-[848px] rounded-[24px] relative overflow-hidden">
                 @if($playVideo)
                     <iframe 
@@ -48,3 +49,4 @@
         </div>
     </div>
 </section>
+@vite('resources/js/animate/landingTentang.js')
