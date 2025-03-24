@@ -3,7 +3,7 @@
         <p class="bg-[#111111] text-[#FFFFFF] font-semibold border border-[#ebebeb] pt-1 pb-1 pl-3 pr-3 rounded-[80px]">STEMBA</p>
         <p class="text-[#525252] font-normal">KERJASAMA DENGAN 100+ INDUSTRI</p>
     </div>
-    <div class="relative w-[1332px] mr-auto ml-auto h-[640px] border border-[#ffffff00] bg-[url(/assets/image/partner.png)]  bg-no-repeat bg-contain bg-center">
+    <div class="relative w-full mr-auto ml-auto h-[640px] bg-[url(/assets/image/partner.png)]  bg-no-repeat bg-contain bg-center">
         <img loading="lazy" draggable="false" src="/assets/image/image3.png" class="w-screen h-[400px] absolute bottom-0" alt="">
     </div>
     <div class='w-full bg-[#F7FAFF] border border-[#00000000] pt-20 pb-20 h-[719px]'>

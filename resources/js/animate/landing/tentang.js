@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     );
                 } else if (entry.target.classList.contains("cardMasjidTentang")) {
                     gsap.fromTo(entry.target, 
-                        { opacity: 0, y: 15, scale: 0.8 }, 
-                        { opacity: 1, y: 0, scale: 1, duration: 1, delay: 0.5, ease: "power2.out" }
+                        { opacity: 0, y: -30}, 
+                        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
                     );
                 } else if (entry.target.classList.contains("cardKompetensiTentang")) {
                     gsap.fromTo(entry.target, 
-                        { opacity: 0, y: 15, scale: 0.8 },
-                        { opacity: 1, y: 0, scale: 1, duration: 1, delay: 0.5, ease: "power2.out" }
+                        { opacity: 0, y: -30},
+                        { opacity: 1, y: 0, duration: 1, delay:0.7, ease: "power2.out" }
                     );
                 }
                 

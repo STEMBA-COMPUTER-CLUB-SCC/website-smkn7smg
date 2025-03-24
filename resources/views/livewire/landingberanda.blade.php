@@ -26,4 +26,4 @@
         </div>
     </div>
 </section>
-@vite('resources/js/animate/landingBeranda.js')
+@vite('resources/js/animate/landing/beranda.js')

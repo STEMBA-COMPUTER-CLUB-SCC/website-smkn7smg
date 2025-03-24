@@ -49,4 +49,4 @@
         </div>
     </div>
 </section>
-@vite('resources/js/animate/landingTentang.js')
+@vite('resources/js/animate/landing/tentang.js')
