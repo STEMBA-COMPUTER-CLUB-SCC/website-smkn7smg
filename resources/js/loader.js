@@ -1,7 +1,7 @@
 window.addEventListener("load", function() {
     gsap.to(".loader", {
         opacity: 0,
-        duration: 0.2,
+        duration: 3,
         ease: "sine.out",
         onComplete: () => {
             const loader = document.querySelector(".loader");

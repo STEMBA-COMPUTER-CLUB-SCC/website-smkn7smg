@@ -1,4 +1,4 @@
-<nav class="pt-6 pb-6 pl-20 pr-20 flex justify-between sticky top-0 bg-[#ffffff] z-10 w-full">
+<nav class="pt-6 pb-6 pl-20 pr-20 flex justify-between max-w-[1920px] ml-auto mr-auto sticky top-0 bg-[#ffffff] z-10 w-full">
     <div class="flex items-center gap-x-3">
         <img loading="lazy" draggable="false" src="/assets/logo/logo_stemba.png" alt="" class="w-[45px]">
         <p class="font-inter font-semibold text-[23px]">SMKN 7 SEMARANG</p>
