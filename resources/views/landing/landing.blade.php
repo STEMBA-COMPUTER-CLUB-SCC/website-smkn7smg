@@ -10,21 +10,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
-    tailwind.config = {
-        theme: {
-        extend: {
-            fontFamily: {
-            'manrope': ['"Manrope"', 'sans-serif'],
-            'inter': ['"Inter"', 'sans-serif']
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'manrope': ['"Manrope"', 'sans-serif'],
+                        'inter': ['"Inter"', 'sans-serif']
+                    }
+                }
             }
         }
-        }
-    }
     </script>
     @livewireStyles
 </head>
 <body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain">
+    @livewire('loader')
     @livewire('navbar')
     @livewire('landingberanda')
     @livewire('landingtentang')
@@ -35,49 +37,6 @@
     @livewire('footer')
     @livewireStyles
 </body>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const targetBeranda = document.querySelector('#beranda');
-    const elementBeranda = document.getElementById('nav-beranda');
-    const targetTentang = document.querySelector('#tentang');
-    const elementTentang = document.getElementById('nav-tentang');
-    const targetJurusan = document.querySelector('#jurusan');
-    const elementJurusan = document.getElementById('nav-jurusan').querySelector('p');
-    const targetBerita = document.querySelector('#berita');
-    const elementBerita = document.getElementById('nav-berita');
-    const targetPrestasi = document.querySelector('#prestasi');
-    const elementPrestasi = document.getElementById('nav-prestasi');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            let element;
-            if (entry.target === targetBeranda) {
-                element = elementBeranda;
-            } else if (entry.target === targetTentang) {
-                element = elementTentang;
-            } else if (entry.target === targetJurusan) {
-                element = elementJurusan;
-            } else if (entry.target === targetBerita) {
-                element = elementBerita;
-            } else if (entry.target === targetPrestasi) {
-                element = elementPrestasi;
-            } else {
-                return;
-            }
-
-            if (entry.isIntersecting) {
-                element.classList.add('text-[#111111]', 'font-bold');
-            } else {
-                element.classList.remove('text-[#111111]', 'font-bold');
-            }
-        });
-    }, { threshold: 0.3 });
-
-    if (targetBeranda) observer.observe(targetBeranda);
-    if (targetTentang) observer.observe(targetTentang);
-    if (targetJurusan) observer.observe(targetJurusan);
-    if (targetBerita) observer.observe(targetBerita);
-    if (targetPrestasi) observer.observe(targetPrestasi);
-});
-</script>
+@vite('resources/js/loader.js')
+@vite('resources/js/navigation.js')
 </html>

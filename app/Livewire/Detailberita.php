@@ -8,7 +8,7 @@ class Detailberita extends Component
 {
     public $thumbnailUrls = [];
     public $activeIndex = 0;
-    public $direction = 'forward'; // Arah awal: maju
+    public $direction = 'forward'; 
 
     public function mount()
     {
@@ -27,11 +27,9 @@ class Detailberita extends Component
         $lastIndex = count($this->thumbnailUrls) - 1;
 
         if ($this->activeIndex < $lastIndex) {
-            // Selalu tambah indeks jika belum di akhir
             $this->activeIndex++;
         }
 
-        // Atur arah untuk tombol tunggal
         if ($this->activeIndex === $lastIndex) {
             $this->direction = 'backward';
         } else {
@@ -44,18 +42,16 @@ class Detailberita extends Component
         if (empty($this->thumbnailUrls)) return;
 
         if ($this->activeIndex > 0) {
-            // Selalu kurangi indeks jika belum di awal
             $this->activeIndex--;
         }
 
-        // Atur arah untuk tombol tunggal
         $lastIndex = count($this->thumbnailUrls) - 1;
         if ($this->activeIndex === 0) {
             $this->direction = 'forward';
         } else if ($this->activeIndex === $lastIndex) {
             $this->direction = 'backward';
         } else {
-            $this->direction = 'forward'; // Default ke forward saat di tengah
+            $this->direction = 'forward'; 
         }
     }
 
