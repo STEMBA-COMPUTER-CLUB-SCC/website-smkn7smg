@@ -2,7 +2,7 @@
     <div class="ml-auto mr-auto w-max flex gap-x-16.5 mb-20 mt-30 max-sm:mt-20 max-sm:flex-col max-sm:gap-y-12">
         <div class="w-max gap-y-[115px] max-sm:gap-y-[72px] 2xl:gap-y-[200px] flex flex-col">
             <div>
-                <div class="sectionBeranda flex bg-[#F7F7F7] text-[16px] max-sm:text-[12px] m-0 mb-5 max-sm:mb-8 font-manrope border border-[#ebebeb] w-max rounded-[80px] items-center pl-1.5 pt-1.5 pb-1.5 pr-4 gap-x-2">
+                <div class="sectionBeranda flex bg-[#F7F7F7] text-[16px] max-sm:text-[12px] m-0 mb-5 max-sm:mb-8 font-manrope border border-[#ebebeb] w-max rounded-[80px] items-center pr-4 max-sm:pr-3 pl-1.5 max-sm:pl-1 pt-1.5 max-sm:pt-1 pb-1.5 max-sm:pb-1 gap-x-2">
                     <p class="bg-[#111111] text-[#FFFFFF] font-semibold border border-[#ebebeb] pt-1 pb-1 pl-3 pr-3 rounded-[80px]">STEMBA</p>
                     <p class="text-[#525252] font-normal">TIADA HARI TANPA PRESTASI</p>
                 </div>
@@ -14,7 +14,7 @@
             </div>
             <div class="flex items-center max-sm:flex-col max-sm:items-start max-sm:w-max max-sm:gap-y-4">
                 <img loading="lazy" draggable="false" class="w-[120px] max-sm:w-[72px] max-sm:h-[32px] h-[40px]" src="/assets/icon/Statistic-Container.svg" alt="">
-                <p class="font-manrope text-[14px] max-sm:text-[12px] max-sm:w-[211px] w-[287px]"><b>100+ Industri</b> <span class="text-[#726B7C]">yang telah bekerja sama dengan SMK Negeri 7 Semarang.</span></p>
+                <p class="font-manrope leading-[160%] text-[14px] max-sm:text-[12px] max-sm:w-[211px] w-[287px]"><b>100+ Industri</b> <span class="text-[#726B7C]">yang telah bekerja sama dengan SMK Negeri 7 Semarang.</span></p>
             </div>
         </div>
         <div class="w-max h-max relative max-sm:left-16">

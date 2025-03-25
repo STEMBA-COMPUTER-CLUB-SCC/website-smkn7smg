@@ -26,7 +26,7 @@
     </script>
     @livewireStyles
 </head>
-<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain">
+<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-center bg-contain">
     @livewire('loader')
     @livewire('navbar')
     @livewire('landingberanda')
