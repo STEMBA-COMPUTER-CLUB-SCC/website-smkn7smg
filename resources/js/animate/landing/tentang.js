@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else if (entry.target.classList.contains("deskripsiTentang")) {
                     gsap.fromTo(entry.target, 
                         { opacity: 0, y: 15 }, 
-                        { opacity: 1, y: 0, duration: 1, delay: 0.5, ease: "power2.out" }
+                        { opacity: 1, y: 0, duration: 0.3, delay: 0.5, ease: "power2.out" }
                     );
                 } else if (entry.target.classList.contains("cardMasjidTentang")) {
                     gsap.fromTo(entry.target, 
@@ -22,14 +22,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else if (entry.target.classList.contains("cardKompetensiTentang")) {
                     gsap.fromTo(entry.target, 
                         { opacity: 0, y: -30},
-                        { opacity: 1, y: 0, duration: 1, delay:0.7, ease: "power2.out" }
+                        { opacity: 1, y: 0, duration: 1, delay:0.2, ease: "power2.out" }
                     );
                 }
                 
                 observer.unobserve(entry.target); 
             }
         });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.8 });
 
     elements.forEach(el => observer.observe(el));
 });

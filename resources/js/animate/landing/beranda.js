@@ -17,12 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else if (entry.target.classList.contains("imageBeranda")) {
                     gsap.fromTo(entry.target, 
                         { opacity: 0, scale: 0.5 }, 
-                        { opacity: 1, scale: 1, duration: 0.6, delay: 0, ease: "sine.out" }
+                        { opacity: 1, scale: 1, duration: 0.6, ease: "sine.out" }
                     );
                 } else if (entry.target.classList.contains("deskripsiBeranda")) {
                     gsap.fromTo(entry.target, 
                         { opacity: 0 }, 
-                        { opacity: 0.6, duration: 1, delay: 0.5, ease: "power2.out" }
+                        { opacity: 0.6, duration: 0.5, ease: "power2.out" }
                     );
                 } else if (entry.target.classList.contains("welcomeBeranda1")) {
                     gsap.fromTo(entry.target, 

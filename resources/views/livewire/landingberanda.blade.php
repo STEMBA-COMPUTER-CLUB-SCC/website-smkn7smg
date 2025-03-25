@@ -7,7 +7,7 @@
                     <p class="text-[#525252] font-normal">TIADA HARI TANPA PRESTASI</p>
                 </div>
                 <p class="judulBeranda opacity-0 font-semibold text-[68px] 2xl:text-[72px] m-0 mb-6 font-manrope w-[734px]">SEKOLAH MENENGAH KEJURUAN NEGERI 7 SEMARANG</p>
-                <p class="deskripsiBeranda font-normal text-[22px] m-0 mb-10 font-manrope text-[#111111] opacity-60 w-[617px]">SMK Negeri 7 Semarang adalah sekolah menengah kejuruan yang berada di Semarang, Jawa Tengah, Indonesia. </p>
+                <p class="deskripsiBeranda opacity-0 font-normal text-[22px] m-0 mb-10 font-manrope text-[#111111] w-[617px]">SMK Negeri 7 Semarang adalah sekolah menengah kejuruan yang berada di Semarang, Jawa Tengah, Indonesia. </p>
                 <a href="">
                     <p class="bg-[#1152D9] text-[#ffffff] font-manrope font-semibold text-[16px] w-max pt-2.5 pb-2.5 pl-8 pr-8 rounded-[42px]">Selengkapnya</p>
                 </a>
