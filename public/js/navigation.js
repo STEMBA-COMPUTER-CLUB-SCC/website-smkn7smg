@@ -57,13 +57,13 @@ document.addEventListener('DOMContentLoaded', () => {
         arrowIcon.classList.toggle('-rotate-90');
     });
     closeSidebar.addEventListener('click', () => {
-        if (sidebarMobile.classList.contains('left-0')) {
-            sidebarMobile.classList.replace('left-0', '-left-100');
+        if (sidebarMobile.classList.contains('translate-x-[0px]')) {
+            sidebarMobile.classList.replace('translate-x-[0px]', 'translate-x-[-400px]');
         }
     })
     openSidebar.addEventListener('click', () => {
-        if (sidebarMobile.classList.contains('-left-100')) {
-            sidebarMobile.classList.replace('-left-100', 'left-0');
+        if (sidebarMobile.classList.contains('translate-x-[-400px]')) {
+            sidebarMobile.classList.replace('translate-x-[-400px]', 'translate-x-[0px]');
         }
     })
     if (window.location.pathname === "/jurusan/pplg") {

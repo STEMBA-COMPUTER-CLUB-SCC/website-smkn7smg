@@ -1,5 +1,5 @@
-<section id="jurusan" class="border border-transparent">
-    <div class='w-[1280px] max-sm:w-[327px] mt-20 mb-10 max-sm:mb-8 ml-auto mr-auto'>
+<section id="jurusan" class="border border-transparent pt-28">
+    <div class='w-[1280px] max-sm:w-[327px] mb-10 max-sm:mb-8 ml-auto mr-auto'>
         <div class="font-manrope flex items-center gap-x-2 bg-[#F7F7F7] border border-[#EBEBEB] w-max pr-4 max-sm:pr-3 pl-1.5 max-sm:pl-1 pt-1.5 max-sm:pt-1 pb-1.5 max-sm:pb-1 rounded-[80px]">
             <p class="bg-[#111111] text-[#ffffff] font-semibold max-sm:text-[12px] text-[16px] pt-1 pb-1 pl-3 pr-3 border border-[#ebebeb] rounded-[80px]">JURUSAN</p>
             <p class='text-[#525252] font-normal max-sm:text-[12px] text-[16px]'>KONSENTRASI KEAHLIAN</p>
@@ -54,4 +54,5 @@
         </div>
     </div>
 </section>
-@vite('resources/js/animate/landing/jurusan.js')
+
+<script src="/js/animate/landing/jurusan.js"></script>
