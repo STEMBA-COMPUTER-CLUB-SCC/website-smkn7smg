@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>404 Not Found</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="/css/app.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,16 +27,11 @@
     </script>
     @livewireStyles
 </head>
-<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] max-sm:overflow-x-hidden bg-center bg-contain">
-    @livewire(name: 'loader')   
-    @livewire(name: 'navbar')
-    @livewire(name: 'landingberanda')
-    @livewire(name: 'landingtentang')
-    @livewire(name: 'landingjurusan')
-    @livewire(name: 'landingberita')
-    @livewire(name: 'landingprestasi')
-    @livewire(name: 'landingkerjasama')
-    @livewire(name: 'footer')
+<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain">
+    @livewire('loader')
+    @livewire('navbar')
+    @livewire('notfound')
+    <!-- @livewire('footer') -->
     @livewireStyles
 </body>
     <script src="/js/loader.js"></script>

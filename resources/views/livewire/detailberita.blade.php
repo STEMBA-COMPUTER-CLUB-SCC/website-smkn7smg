@@ -61,10 +61,10 @@ Setelah melewati beberapa tahapan penilaian dari dewan juri, Alhamdulillah 7 Li
     <div class='w-[408px] h-max'>
         <div class='flex items-center mb-7 justify-between'>
             <p class='font-manrope text-[24px] text-[#111111] font-semibold w-max'>BERITA LAINNYA</p>
-            <div class='flex gap-x-1.5 items-center border bg-[#ffffff] border-[#EBEBEB] w-max py-1 pl-4 pr-1 rounded-full'>
-                <input type="text" name="" class='w-[59px] placeholder:text-[#525252] font-manrope text-[16px] text-[#111111] focus:outline-none' placeholder='Cari' id="">
-                <img src="/assets/icon/search.svg" class='cursor-pointer w-9' alt="">
-            </div>
+            <a href="/berita" class='flex gap-x-1.5 items-center border bg-[#ffffff] border-[#EBEBEB] w-max py-1 pl-4 pr-1 rounded-full'>
+                <p class="font-manrope text-[16px] font-normal text-[#525252]">Lihat semua</p>
+                <img src="/assets/icon/arrow-up.png" class='cursor-pointer w-9' alt="">
+            </a>
         </div>
         <div class='flex flex-col gap-y-7'>
             <div class='bg-[#FFFFFF] transition-all duration-300 hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)] hover:cursor-pointer group/berita1 border border-[#EBEBEB] rounded-[24px] p-5 w-full h-[448px]'>
