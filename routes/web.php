@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('/landing/landing');
 });
 
+Route::get('/jurusan/pplg', function () {
+    return view('/landing/landing');
+});
+
 Route::get('/berita/detail', function () {
     return view('/berita/detail');
 });

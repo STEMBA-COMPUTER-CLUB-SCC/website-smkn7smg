@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     @vite('resources/css/app.css')
+    <link rel="stylesheet" href="/css/app.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
@@ -26,18 +27,19 @@
     </script>
     @livewireStyles
 </head>
-<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-center bg-contain">
-    @livewire('loader')
-    @livewire('navbar')
-    @livewire('landingberanda')
-    @livewire('landingtentang')
-    @livewire('landingjurusan')
-    @livewire('landingberita')
-    @livewire('landingprestasi')
-    @livewire('landingkerjasama')
-    @livewire('footer')
+<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] max-sm:overflow-x-hidden bg-center bg-contain">
+    @livewire(name: 'loader')   
+    @livewire(name: 'navbar')
+    @livewire(name: 'landingberanda')
+    @livewire(name: 'landingtentang')
+    @livewire(name: 'landingjurusan')
+    @livewire(name: 'landingberita')
+    @livewire(name: 'landingprestasi')
+    @livewire(name: 'landingkerjasama')
+    @livewire(name: 'footer')
     @livewireStyles
 </body>
-@vite('resources/js/loader.js')
-@vite('resources/js/navigation.js')
+ <script src="/js/loader.js"></script>
+ <script src="/js/navigation.js"></script>
+ <script src="/js/app.js"></script>
 </html>

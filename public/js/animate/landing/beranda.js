@@ -25,10 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
                         { opacity: 0.6, duration: 0.5, ease: "power2.out" }
                     );
                 } else if (entry.target.classList.contains("welcomeBeranda1")) {
-                    gsap.fromTo(entry.target, 
-                        { opacity: 0, x:-10 }, 
-                        { opacity: 1, x:0, duration: 1, delay: 0.5, ease: "sine.out" }
-                    );
+                    if (window.innerWidth < 640) {
+                        gsap.fromTo(entry.target, 
+                            { opacity: 0, y: 50}, 
+                            { opacity: 1, y: 0, duration: 2, ease: "power2.out" }
+                        );
+                    } else {
+                        gsap.fromTo(entry.target, 
+                            { opacity: 0, x:-10 }, 
+                            { opacity: 1, x:0, duration: 1, delay: 0.5, ease: "sine.out" }
+                        );
+                    }
                 }
                 
                 observer.unobserve(entry.target); 
