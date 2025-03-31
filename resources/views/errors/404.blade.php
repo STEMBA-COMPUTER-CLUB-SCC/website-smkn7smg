@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Berita</title>
+    <title>404 Not Found</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="/css/app.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,8 +30,8 @@
 <body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain">
     @livewire('loader')
     @livewire('navbar')
-    @livewire('pageberita')
-    @livewire('footer')
+    @livewire('notfound')
+    <!-- @livewire('footer') -->
     @livewireStyles
 </body>
     <script src="/js/loader.js"></script>
