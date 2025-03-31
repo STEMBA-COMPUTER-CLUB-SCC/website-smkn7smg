@@ -91,8 +91,8 @@
             
             <button 
                 wire:click="nextPage" 
-                class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope {{ $currentPage === $totalPages ? 'text-[#9CA0B5] cursor-not-allowed' : 'text-[#111111]' }}"
-                @if($currentPage === $totalPages) disabled @endif
+                class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope {{ $currentPage === $totalPages || $total === 0 ? 'text-[#9CA0B5] cursor-not-allowed' : 'text-[#111111]' }}"
+                @if($currentPage === $totalPages || $total === 0) disabled @endif
             >
                 >
             </button>

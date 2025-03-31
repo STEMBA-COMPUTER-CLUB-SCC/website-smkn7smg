@@ -150,12 +150,152 @@ class Pageberita extends Component
             'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
             'kategori' => 'TITL'
         ],
+        [
+            'gambar' => '/assets/image/berita/traspac.png',
+            'tanggal' => 'Sabtu, 1 Maret 2025',
+            'judul' => 'Siswa SIJA Berberita di Ajang Traspac Competition Tahun 2025',
+            'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
+            'kategori' => 'SIJA'
+        ],
+        [
+            'gambar' => '/assets/image/berita/purna.png',
+            'tanggal' => 'Jumat, 28 Februari 2025',
+            'judul' => 'Selamat Memasuki Purna Tugas Kepada Bapak Drs. Budi Santosa',
+            'deskripsi' => 'Pensiun atau Purna Tugas adalah seseorang yang sudah tidak bekerja lagi karena usianya sudah lanjut...',
+            'kategori' => 'STEMBA'
+        ],
+        [
+            'gambar' => '/assets/image/berita/sosialisasi.png',
+            'tanggal' => 'Rabu, 26 Februari 2025',
+            'judul' => 'Sosialisasi Kelas Industri Pemrograman dari PT Telkom Indonesia dan PT Maleo Edukasi Teknologi Tahun 2025',
+            'deskripsi' => 'Kelas industri pemrograman adalah program pembelajaran khusus di sekolah vokasi (SMK) yang bertujuan...',
+            'kategori' => 'KGSP'
+        ],
+        [
+            'gambar' => '/assets/image/berita/traspac.png',
+            'tanggal' => 'Sabtu, 1 Maret 2025',
+            'judul' => 'Siswa SIJA Berberita di Ajang Traspac Competition Tahun 2025',
+            'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
+            'kategori' => 'TITL'
+        ],
+        [
+            'gambar' => '/assets/image/berita/traspac.png',
+            'tanggal' => 'Sabtu, 1 Maret 2025',
+            'judul' => 'Siswa SIJA Berberita di Ajang Traspac Competition Tahun 2025',
+            'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
+            'kategori' => 'SIJA'
+        ],
+        [
+            'gambar' => '/assets/image/berita/purna.png',
+            'tanggal' => 'Jumat, 28 Februari 2025',
+            'judul' => 'Selamat Memasuki Purna Tugas Kepada Bapak Drs. Budi Santosa',
+            'deskripsi' => 'Pensiun atau Purna Tugas adalah seseorang yang sudah tidak bekerja lagi karena usianya sudah lanjut...',
+            'kategori' => 'STEMBA'
+        ],
+        [
+            'gambar' => '/assets/image/berita/sosialisasi.png',
+            'tanggal' => 'Rabu, 26 Februari 2025',
+            'judul' => 'Sosialisasi Kelas Industri Pemrograman dari PT Telkom Indonesia dan PT Maleo Edukasi Teknologi Tahun 2025',
+            'deskripsi' => 'Kelas industri pemrograman adalah program pembelajaran khusus di sekolah vokasi (SMK) yang bertujuan...',
+            'kategori' => 'KGSP'
+        ],
+        [
+            'gambar' => '/assets/image/berita/traspac.png',
+            'tanggal' => 'Sabtu, 1 Maret 2025',
+            'judul' => 'Siswa SIJA Berberita di Ajang Traspac Competition Tahun 2025',
+            'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
+            'kategori' => 'TITL'
+        ],
+        [
+            'gambar' => '/assets/image/berita/traspac.png',
+            'tanggal' => 'Sabtu, 1 Maret 2025',
+            'judul' => 'Siswa SIJA Berberita di Ajang Traspac Competition Tahun 2025',
+            'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
+            'kategori' => 'SIJA'
+        ],
+        [
+            'gambar' => '/assets/image/berita/purna.png',
+            'tanggal' => 'Jumat, 28 Februari 2025',
+            'judul' => 'Selamat Memasuki Purna Tugas Kepada Bapak Drs. Budi Santosa',
+            'deskripsi' => 'Pensiun atau Purna Tugas adalah seseorang yang sudah tidak bekerja lagi karena usianya sudah lanjut...',
+            'kategori' => 'STEMBA'
+        ],
+        [
+            'gambar' => '/assets/image/berita/sosialisasi.png',
+            'tanggal' => 'Rabu, 26 Februari 2025',
+            'judul' => 'Sosialisasi Kelas Industri Pemrograman dari PT Telkom Indonesia dan PT Maleo Edukasi Teknologi Tahun 2025',
+            'deskripsi' => 'Kelas industri pemrograman adalah program pembelajaran khusus di sekolah vokasi (SMK) yang bertujuan...',
+            'kategori' => 'KGSP'
+        ],
+        [
+            'gambar' => '/assets/image/berita/traspac.png',
+            'tanggal' => 'Sabtu, 1 Maret 2025',
+            'judul' => 'Siswa SIJA Berberita di Ajang Traspac Competition Tahun 2025',
+            'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
+            'kategori' => 'TITL'
+        ],
+        [
+            'gambar' => '/assets/image/berita/traspac.png',
+            'tanggal' => 'Sabtu, 1 Maret 2025',
+            'judul' => 'Siswa SIJA Berberita di Ajang Traspac Competition Tahun 2025',
+            'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
+            'kategori' => 'SIJA'
+        ],
+        [
+            'gambar' => '/assets/image/berita/purna.png',
+            'tanggal' => 'Jumat, 28 Februari 2025',
+            'judul' => 'Selamat Memasuki Purna Tugas Kepada Bapak Drs. Budi Santosa',
+            'deskripsi' => 'Pensiun atau Purna Tugas adalah seseorang yang sudah tidak bekerja lagi karena usianya sudah lanjut...',
+            'kategori' => 'STEMBA'
+        ],
+        [
+            'gambar' => '/assets/image/berita/sosialisasi.png',
+            'tanggal' => 'Rabu, 26 Februari 2025',
+            'judul' => 'Sosialisasi Kelas Industri Pemrograman dari PT Telkom Indonesia dan PT Maleo Edukasi Teknologi Tahun 2025',
+            'deskripsi' => 'Kelas industri pemrograman adalah program pembelajaran khusus di sekolah vokasi (SMK) yang bertujuan...',
+            'kategori' => 'KGSP'
+        ],
+        [
+            'gambar' => '/assets/image/berita/traspac.png',
+            'tanggal' => 'Sabtu, 1 Maret 2025',
+            'judul' => 'Siswa SIJA Berberita di Ajang Traspac Competition Tahun 2025',
+            'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
+            'kategori' => 'TITL'
+        ],
+        [
+            'gambar' => '/assets/image/berita/traspac.png',
+            'tanggal' => 'Sabtu, 1 Maret 2025',
+            'judul' => 'Siswa SIJA Berberita di Ajang Traspac Competition Tahun 2025',
+            'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
+            'kategori' => 'SIJA'
+        ],
+        [
+            'gambar' => '/assets/image/berita/purna.png',
+            'tanggal' => 'Jumat, 28 Februari 2025',
+            'judul' => 'Selamat Memasuki Purna Tugas Kepada Bapak Drs. Budi Santosa',
+            'deskripsi' => 'Pensiun atau Purna Tugas adalah seseorang yang sudah tidak bekerja lagi karena usianya sudah lanjut...',
+            'kategori' => 'STEMBA'
+        ],
+        [
+            'gambar' => '/assets/image/berita/sosialisasi.png',
+            'tanggal' => 'Rabu, 26 Februari 2025',
+            'judul' => 'Sosialisasi Kelas Industri Pemrograman dari PT Telkom Indonesia dan PT Maleo Edukasi Teknologi Tahun 2025',
+            'deskripsi' => 'Kelas industri pemrograman adalah program pembelajaran khusus di sekolah vokasi (SMK) yang bertujuan...',
+            'kategori' => 'KGSP'
+        ],
+        [
+            'gambar' => '/assets/image/berita/traspac.png',
+            'tanggal' => 'Sabtu, 1 Maret 2025',
+            'judul' => 'Siswa SIJA Berberita di Ajang Traspac Competition Tahun 2025',
+            'deskripsi' => 'PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi...',
+            'kategori' => 'TITL'
+        ],
     ];
     
     public $perPage = 6;
     public $lastDirection = 'forward';
     public $search = '';
-    public $selectedCategories = []; // Array untuk menyimpan kategori yang dipilih
+    public $selectedCategories = [];
 
     private function parseIndonesianDate($dateString)
     {
@@ -196,7 +336,7 @@ class Pageberita extends Component
         } else {
             $this->selectedCategories[] = $category;
         }
-        $this->resetPage(); // Reset pagination saat filter kategori berubah
+        $this->resetPage();
     }
 
     public function render()
@@ -250,13 +390,21 @@ class Pageberita extends Component
             'totalPages' => $totalPages,
             'startPage' => $startPage,
             'endPage' => $endPage,
-            'selectedCategories' => $this->selectedCategories, // Kirim ke view
+            'selectedCategories' => $this->selectedCategories,
         ]);
     }
 
     public function nextPage()
     {
-        $totalPages = (int) ceil(count($this->contentBerita) / $this->perPage);
+        $filteredBerita = collect($this->contentBerita)
+            ->filter(function ($item) {
+                $matchesSearch = empty($this->search) || stripos($item['judul'], $this->search) !== false;
+                $matchesCategory = empty($this->selectedCategories) || in_array($item['kategori'], $this->selectedCategories);
+                return $matchesSearch && $matchesCategory;
+            })
+            ->values();
+
+        $totalPages = (int) ceil($filteredBerita->count() / $this->perPage);
         if ($this->getPage() < $totalPages) {
             $this->lastDirection = 'forward';
             $this->setPage($this->getPage() + 1);
@@ -273,7 +421,15 @@ class Pageberita extends Component
 
     public function gotoPage($page)
     {
-        $totalPages = (int) ceil(count($this->contentBerita) / $this->perPage);
+        $filteredBerita = collect($this->contentBerita)
+            ->filter(function ($item) {
+                $matchesSearch = empty($this->search) || stripos($item['judul'], $this->search) !== false;
+                $matchesCategory = empty($this->selectedCategories) || in_array($item['kategori'], $this->selectedCategories);
+                return $matchesSearch && $matchesCategory;
+            })
+            ->values();
+
+        $totalPages = (int) ceil($filteredBerita->count() / $this->perPage);
         if ($page >= 1 && $page <= $totalPages) {
             $this->setPage($page);
         }
