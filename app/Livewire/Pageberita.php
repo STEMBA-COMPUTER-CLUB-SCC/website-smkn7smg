@@ -155,7 +155,7 @@ class Pageberita extends Component
     public $perPage = 6;
     public $lastDirection = 'forward';
     public $search = '';
-    public $selectedCategories = []; // Array untuk menyimpan kategori yang dipilih
+    public $selectedCategories = [];
 
     private function parseIndonesianDate($dateString)
     {
@@ -196,7 +196,12 @@ class Pageberita extends Component
         } else {
             $this->selectedCategories[] = $category;
         }
-        $this->resetPage(); // Reset pagination saat filter kategori berubah
+        $this->resetPage();
+    }
+
+    public function searchBerita()
+    {
+        $this->resetPage(); 
     }
 
     public function render()
@@ -250,13 +255,21 @@ class Pageberita extends Component
             'totalPages' => $totalPages,
             'startPage' => $startPage,
             'endPage' => $endPage,
-            'selectedCategories' => $this->selectedCategories, // Kirim ke view
+            'selectedCategories' => $this->selectedCategories,
         ]);
     }
 
     public function nextPage()
     {
-        $totalPages = (int) ceil(count($this->contentBerita) / $this->perPage);
+        $filteredBerita = collect($this->contentBerita)
+            ->filter(function ($item) {
+                $matchesSearch = empty($this->search) || stripos($item['judul'], $this->search) !== false;
+                $matchesCategory = empty($this->selectedCategories) || in_array($item['kategori'], $this->selectedCategories);
+                return $matchesSearch && $matchesCategory;
+            })
+            ->values();
+
+        $totalPages = (int) ceil($filteredBerita->count() / $this->perPage);
         if ($this->getPage() < $totalPages) {
             $this->lastDirection = 'forward';
             $this->setPage($this->getPage() + 1);
@@ -273,7 +286,15 @@ class Pageberita extends Component
 
     public function gotoPage($page)
     {
-        $totalPages = (int) ceil(count($this->contentBerita) / $this->perPage);
+        $filteredBerita = collect($this->contentBerita)
+            ->filter(function ($item) {
+                $matchesSearch = empty($this->search) || stripos($item['judul'], $this->search) !== false;
+                $matchesCategory = empty($this->selectedCategories) || in_array($item['kategori'], $this->selectedCategories);
+                return $matchesSearch && $matchesCategory;
+            })
+            ->values();
+
+        $totalPages = (int) ceil($filteredBerita->count() / $this->perPage);
         if ($page >= 1 && $page <= $totalPages) {
             $this->setPage($page);
         }

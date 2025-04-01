@@ -1,4 +1,4 @@
-<section id="footer" class="border border-transparent">
+<section id="footer" class="border border-transparent max-sm:overflow-hidden">
     <div class='bg-[#FFFFFF] border border-transparent h-[514px] max-sm:h-[1050px] w-full'>
         <div class='h-[434px] w-[1280px] max-sm:w-screen ml-auto mr-auto mt-[40px]'>
             <div class='flex max-sm:flex-col sm:items-end justify-between mb-14'>
@@ -11,7 +11,7 @@
                             <i class="fa-regular fa-envelope text-[20px] mr-2 text-[#737378] group-focus-within:text-[#1152D9]"></i>
                             <input type="email" placeholder="Masukkan Email Anda" class="placeholder:text-[#737378] text-[16px] max-sm:w-[140px] max-sm:text-[14px] font-normal font-manrope focus:outline-0 w-[220px] text-[#111111]">
                         </div>
-                        <button class='font-manrope font-normal rounded-full text-[16px] max-sm:text-[14px] text-[#ffffff] bg-[#1152D9] px-4 py-2.5 max-sm:py-2 h-[44px] max-sm:h-[36px]'>Kontak Kami</button>
+                        <button class='font-manrope font-normal rounded-full text-[16px] max-sm:text-[14px] text-[#ffffff] bg-[#1152D9] hover:bg-[#007FFF] transition-all duration-300 ease-in-out hover:cursor-pointer px-4 py-2.5 max-sm:py-2 h-[44px] max-sm:h-[36px]'>Kontak Kami</button>
                     </div>
                 </div>
                 <div class='max-sm:flex-col flex sm:h-max'>

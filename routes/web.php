@@ -17,3 +17,11 @@ Route::get('/berita', function () {
 Route::get('/berita/detail', function () {
     return view('/berita/detail');
 });
+
+Route::get('/prestasi', function () {
+    return view('/prestasi/prestasi');
+});
+
+Route::get('/prestasi/detail', function () {
+    return view('/prestasi/detail');
+});
