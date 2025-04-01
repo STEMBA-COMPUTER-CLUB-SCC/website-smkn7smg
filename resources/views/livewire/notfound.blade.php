@@ -9,7 +9,7 @@
         </div>
         <p class="text-[22px] font-manrope font-normal w-[617px] text-[#111111] opacity-60 text-center mb-10">Halaman yang Anda cari tidak ditemukan. Mungkin telah dihapus, dipindahkan, atau URL yang Anda masukkan salah.</p>
         <a href="/">
-            <p class="text-[#FFFFFF] text-[16px] font-manrope font-semibold bg-[#1152D9] py-2.5 px-8 rounded-[42px]">Kembali ke beranda</p>
+            <p class="text-[#FFFFFF] text-[16px] font-manrope font-semibold bg-[#1152D9] hover:bg-[#007FFF] py-2.5 px-8 rounded-[42px]">Kembali ke beranda</p>
         </a>
     </div>
 </div>
