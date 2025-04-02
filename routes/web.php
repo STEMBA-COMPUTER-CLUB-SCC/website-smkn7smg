@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KontakController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,4 +17,8 @@ Route::get('/berita', function () {
 
 Route::get('/berita/detail', function () {
     return view('/berita/detail');
+});
+
+Route::get('/kontak', function () {
+    return view('/kontak/kontak');
 });
