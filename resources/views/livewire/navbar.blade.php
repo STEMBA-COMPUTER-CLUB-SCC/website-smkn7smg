@@ -1,4 +1,4 @@
-<nav class="flex sticky max-sm:fixed max-sm:w-full top-0 bg-[#ffffff] z-10">
+<nav class="flex sticky max-sm:fixed max-sm:w-full max-sm:border max-sm:border-transparent top-0 bg-[#ffffff] z-10">
     <div class="pt-6 pb-6 pl-20 max-sm:pl-0 max-sm:pr-0 max-sm:w-[327px] pr-20 flex justify-between max-w-[1920px] ml-auto mr-auto w-full">
         <div class="flex items-center gap-x-3">
             <img id="open-sidebar" loading="lazy" draggable   ="false" src="/assets/icon/humberger.png" alt="" class="hidden max-sm:block w-[24px]">
@@ -58,11 +58,11 @@
                     <p id="nav-prestasi" class="transition-all duration-300 ease-in-out cursor-pointer">Prestasi</p>
                 </a>
             </div>
-            <p class="bg-[#1152D9] pt-2.5 pb-2.5 pl-6 max-sm:pl-5 pr-6 max-sm:pr-5 max-sm:w-max text-[#ffffff] rounded-[42px] font-manrope text-[16px] max-sm:text-[14px] font-semibold">Hubungi Kami</p>
+            <p class="bg-[#1152D9] hover:bg-[#007FFF] transition-all duration-300 ease-in-out hover:cursor-pointer pt-2.5 pb-2.5 pl-6 max-sm:pl-5 pr-6 max-sm:pr-5 max-sm:w-max text-[#ffffff] rounded-[42px] font-manrope text-[16px] max-sm:text-[14px] font-semibold">Hubungi Kami</p>
         </div>
     </div>
     <!-- navbar mobile -->
-    <div id="sidebar-mobile" class="sm:hidden fixed z-20 max-sm:top-0 left-0 translate-x-[-400px] transition-all duration-1000 bg-[#FAFAFA] border border-[#EBEBEB] max-sm:w-[303px] h-screen pt-5">
+    <div id="sidebar-mobile" class="sm:hidden fixed z-20 max-sm:top-0 left-0 translate-x-[-400px] transition-all duration-500 bg-[#FAFAFA] border border-[#EBEBEB] max-sm:w-[303px] h-screen pt-5">
         <div>
             <div class="w-[263px] justify-between flex items-center ml-auto mr-auto mb-9">
                 <img loading="lazy" draggable="false" src="/assets/logo/logo_stemba.png" alt="" class="max-sm:block w-[43px]">
@@ -82,7 +82,7 @@
                         </a>
                             <img id="arrow-icon" loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt="" class="w-[20px] transition-transform duration-300 ease-in-out">
                     </button>
-                    <div id="dropdown-menu" class="transition-all duration-700 h-[0px] flex flex-row overflow-hidden ease-in-out">
+                    <div id="dropdown-menu" class="transition-all duration-500 h-[0px] flex flex-row overflow-hidden ease-in-out">
                         <div class="w-[28px] h-[315px] bg-[url(/assets/icon/sidebarDots.png)] relative bg-cover bg-center">
                             <div id="dot-pplg" class="absolute top-[18px] right-0 size-[8px] rounded-full bg-[#DEDEDE]"></div>
                             <div id="dot-kpbs" class="absolute top-[63px] right-0 size-[8px] rounded-full bg-[#DEDEDE]"></div>

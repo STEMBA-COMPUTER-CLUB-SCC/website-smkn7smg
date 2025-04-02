@@ -9,8 +9,8 @@
             <p class="font-manrope font-normal text-[20px] text-[#525252] text-center w-[462px]">Lihat dan baca mengenai seluruh informasi terbaru di SMKN 7 Semarang</p>
         </div>
         <div class="bg-[#FFFFFF] border border-[#EBEBEB] rounded-full w-[480px] flex flex-row items-center py-1 pr-1 pl-4 justify-between mb-6">
-            <input wire:model.live="search" class="text-[16px] border-none text-[#111111] w-[404px] focus:outline-none placeholder:text-[#525252] font-manrope font-normal" type="text" name="" placeholder="Cari berita di SMKN 7 Semarang" id="searchInput">
-            <img class="w-[36px]" src="/assets/icon/search.svg" alt="">
+            <input wire:model="search" wire:keydown.enter="searchBerita" class="text-[16px] border-none text-[#111111] w-[404px] focus:outline-none placeholder:text-[#525252] font-manrope font-normal" type="text" name="" placeholder="Cari berita di SMKN 7 Semarang" id="searchInput">
+            <img wire:click="searchBerita" class="hover:cursor-pointer w-[36px]" src="/assets/icon/search.svg" alt="">
         </div>
         <div class="w-max flex flex-row gap-x-3">
             @php
@@ -51,7 +51,7 @@
                 ];
                 $hoverColor = $colors[$item["kategori"]] ?? "#1152D9";
             @endphp
-            <div class='bg-[#FFFFFF] hover:cursor-pointer transition-all duration-300 border-opacity-30 border border-[#EBEBEB] rounded-[24px] p-5 w-full h-[448px]'>
+            <div class='bg-[#FFFFFF] transition-all duration-300 border-opacity-30 border border-[#EBEBEB] rounded-[24px] p-5 w-full h-[448px] hover:cursor-pointer hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)]'>
                 <div class='transition-all duration-300 bg-[url({{ $item["gambar"] }})] h-[240px] w-[368px] rounded-[16px] border bg-cover bg-center relative mb-5'>
                     <p class='transition-all duration-300 absolute right-3 top-3 uppercase py-2 px-5 font-manrope text-[16px] border border-[#EBEBEB] w-max rounded-full font-semibold bg-[#FFFFFF] text-[{{ $hoverColor }}]'>
                         {{ $item["kategori"] }}
@@ -62,7 +62,7 @@
                 <p class='font-manrope text-[14px] font-normal w-[368px] m-0 break-word line-clamp-2'>{{ $item["deskripsi"] }}</p>
             </div>
         @empty
-            <p class="font-manrope text-[16px] text-[#525252] col-span-3 text-center">Tidak ada berita yang ditemukan.</p>
+            <p class="font-manrope text-[16px] text-[#525252] col-span-3 text-center">Tidak ada informasi yang ditemukan.</p>
         @endforelse
     </div>
     <div class="w-[1280px] flex flex-row justify-between mt-6 ml-auto mr-auto items-center mb-20">
@@ -104,6 +104,7 @@
     document.getElementById('searchInput').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             e.preventDefault();
+            @this.call('searchBerita');
         }
     });
 </script>
