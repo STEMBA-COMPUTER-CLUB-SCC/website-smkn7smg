@@ -1,16 +1,16 @@
 <section id="berita">
-    <div class="w-max ml-auto mr-auto flex flex-col items-center mt-20 mb-16">
-        <div class="w-max flex flex-col items-center mb-16">
+    <div class="w-max max-sm:w-[327px] max-sm:mt-[110px] max-sm:mb-8 ml-auto mr-auto flex flex-col items-center mt-20 mb-16">
+        <div class="w-max flex flex-col items-center mb-16 max-sm:mb-8">
             <div class="sectionBeranda flex bg-[#F7F7F7] text-[16px] max-sm:text-[12px] m-0 mb-6 max-sm:mb-8 font-manrope border border-[#ebebeb] w-max rounded-[80px] items-center pr-4 max-sm:pr-3 pl-1.5 max-sm:pl-1 pt-1.5 max-sm:pt-1 pb-1.5 max-sm:pb-1 gap-x-2">
                 <p class="bg-[#111111] text-[#FFFFFF] font-semibold border border-[#ebebeb] pt-1 pb-1 pl-3 pr-3 rounded-[80px]">BERITA</p>
                 <p class="text-[#525252] font-normal">INFORMASI TERBARU</p>
             </div>
-            <p class="font-manrope font-semibold text-[48px] text-[#111111] text-center mb-6">INFORMASI TERKAIT SEKOLAH</p>
-            <p class="font-manrope font-normal text-[20px] text-[#525252] text-center w-[462px]">Lihat dan baca mengenai seluruh informasi terbaru di SMKN 7 Semarang</p>
+            <p class="font-manrope font-semibold text-[48px] text-[#111111] text-center mb-6 max-sm:mb-4 max-sm:text-[32px] max-sm:w-[193px]">INFORMASI TERKAIT SEKOLAH</p>
+            <p class="font-manrope font-normal text-[20px] text-[#525252] text-center w-[462px] max-sm:w-[265px] max-sm:text-[14px]">Lihat dan baca mengenai seluruh informasi terbaru di SMKN 7 Semarang</p>
         </div>
-        <div class="bg-[#FFFFFF] border border-[#EBEBEB] rounded-full w-[480px] flex flex-row items-center py-1 pr-1 pl-4 justify-between mb-6">
-            <input wire:model="search" wire:keydown.enter="searchBerita" class="text-[16px] border-none text-[#111111] w-[404px] focus:outline-none placeholder:text-[#525252] font-manrope font-normal" type="text" name="" placeholder="Cari berita di SMKN 7 Semarang" id="searchInput">
-            <img wire:click="searchBerita" class="hover:cursor-pointer w-[36px]" src="/assets/icon/search.svg" alt="">
+        <div class="bg-[#FFFFFF] border border-[#EBEBEB] rounded-full w-[480px] flex flex-row items-center py-1 pr-1 pl-4 justify-between mb-6 max-sm:w-[327px]">
+            <input wire:model="search" wire:keydown.enter="searchBerita" class="text-[16px] border-none text-[#111111] w-[404px] focus:outline-none placeholder:text-[#525252] font-manrope font-normal max-sm:text-[12px]" type="text" name="" placeholder="Cari berita di SMKN 7 Semarang" id="searchInput">
+            <i wire:click="searchBerita" class="fa-solid fa-magnifying-glass text-[#FFFFFF] bg-[#1152D8] text-[20px] p-2 rounded-full hover:bg-[#007FFF] transition-all duration-300 ease-in-out max-sm:text-[18px] hover:cursor-pointer"></i>
         </div>
         <div class="w-max flex flex-row gap-x-3">
             @php
@@ -36,7 +36,7 @@
             @endforeach
         </div>
     </div>
-    <div class="w-[1280px] h-max grid grid-cols-3 auto-rows-auto ml-auto gap-7 mr-auto">
+    <div class="w-[1280px] max-sm:grid-cols-1 max-sm:w-[327px] max-sm:gap-10 h-max grid grid-cols-3 auto-rows-auto ml-auto gap-7 mr-auto">
         @forelse($paginatedBerita as $item)
             @php
                 $colors = [
@@ -51,8 +51,8 @@
                 ];
                 $hoverColor = $colors[$item["kategori"]] ?? "#1152D9";
             @endphp
-            <div class='bg-[#FFFFFF] transition-all duration-300 border-opacity-30 border border-[#EBEBEB] rounded-[24px] p-5 w-full h-[448px] hover:cursor-pointer hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)]'>
-                <div class='transition-all duration-300 bg-[url({{ $item["gambar"] }})] h-[240px] w-[368px] rounded-[16px] border bg-cover bg-center relative mb-5'>
+            <div class='bg-[#FFFFFF] max-sm:w-[327px] max-sm:h-[486px] transition-all duration-300 border-opacity-30 border border-[#EBEBEB] rounded-[24px] p-5 w-full h-[448px] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)] hover:cursor-pointer'>
+                <div class='transition-all duration-300 max-sm:w-[295px] max-sm:h-[220px]  bg-[url({{ $item["gambar"] }})] h-[240px] w-[368px] rounded-[16px] border bg-cover bg-center relative mb-5'>
                     <p class='transition-all duration-300 absolute right-3 top-3 uppercase py-2 px-5 font-manrope text-[16px] border border-[#EBEBEB] w-max rounded-full font-semibold bg-[#FFFFFF] text-[{{ $hoverColor }}]'>
                         {{ $item["kategori"] }}
                     </p>
@@ -62,7 +62,7 @@
                 <p class='font-manrope text-[14px] font-normal w-[368px] m-0 break-word line-clamp-2'>{{ $item["deskripsi"] }}</p>
             </div>
         @empty
-            <p class="font-manrope text-[16px] text-[#525252] col-span-3 text-center">Tidak ada informasi yang ditemukan.</p>
+            <p class="font-manrope text-[16px] text-[#525252] col-span-3 text-center">Tidak ada berita yang ditemukan.</p>
         @endforelse
     </div>
     <div class="w-[1280px] flex flex-row justify-between mt-6 ml-auto mr-auto items-center mb-20">
@@ -107,4 +107,13 @@
             @this.call('searchBerita');
         }
     });
+
+    function updateDeviceType() {
+        const isMobile = window.innerWidth < 640;
+        @this.call('setDeviceType', isMobile);
+    }
+
+    document.addEventListener('DOMContentLoaded', updateDeviceType);
+
+    window.addEventListener('resize', updateDeviceType);
 </script>
