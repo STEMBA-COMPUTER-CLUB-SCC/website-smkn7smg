@@ -6,6 +6,7 @@
     <title>Berita SMK Negeri 7 Semarang</title>
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;  
+            scrollbar-width: none;
+        }
+    </style>
     <script>
         tailwind.config = {
             theme: {
@@ -22,7 +32,10 @@
                         'inter': ['"Inter"', 'sans-serif']
                     }
                 }
-            }
+            },
+            plugins: [
+                require('tailwind-scrollbar-hide')
+            ]
         }
     </script>
     @livewireStyles
