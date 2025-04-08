@@ -6,10 +6,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
   return view('/landing/landing');
 });
+ 
+use App\Livewire\Pagejurusan;
 
-Route::get('/jurusan/pplg', function () {
-  return view('/landing/landing');
-});
+Route::get('/jurusan/{key}', Pagejurusan::class)->name('jurusan.jurusan');
+
 
 Route::get('/berita', function () {
   return view('/berita/berita');
