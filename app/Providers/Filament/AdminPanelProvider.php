@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use Filament\Support\Facades\FilamentStyle;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -20,15 +21,30 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 
 class AdminPanelProvider extends PanelProvider
 {
+    // public function boot(): void
+    // {
+    //     FilamentStyle::register([
+    //         'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap'
+    //     ]);
+
+    //     FilamentStyle::style('filament-manrope-font', '
+    //         * {
+    //             font-family: Manrope, sans-serfi;
+    //         }
+    //     ');
+    // }
+
     public function panel(Panel $panel): Panel
     {
         return $panel
             ->default()
+            ->brandName('SMKN 7 SEMARANG')
+            ->favicon(asset('assets/icon/stemba-logo.ico'))
             ->id('admin')
             ->path('admin')
             ->login()
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Emerald,
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -38,8 +54,8 @@ class AdminPanelProvider extends PanelProvider
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
                 Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
             ])
+            ->sidebarCollapsibleOnDesktop()
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
