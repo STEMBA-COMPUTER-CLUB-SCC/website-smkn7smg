@@ -34,13 +34,32 @@
                         'manrope': ['"Manrope"', 'sans-serif'],
                         'inter': ['"Inter"', 'sans-serif']
                     }
-                }
+                },
+                screens: {
+                    'xs': '480px',
+                    'sm': '640px',
+                    'md': '768px',
+                    'lg': '1024px',
+                    'xl': '1280px',
+                    '2xl': '1536px',
+                    'cs1': '1820px',
+                    'cs2': { 'min': '1555px', 'max': '1820px' },
+                    'cs3': { 'min': '1536px', 'max': '1710px' },
+                    'cs4': { 'min': '1536px', 'max': '1680px' },
+                    'cs5': { 'min': '1px', 'max': '680px' },
+                    'cs6': { 'min': '834px', 'max': '1320px' },
+                    'cs7': { 'min': '680px', 'max': '1200px' },
+                    'cs8': { 'min': '680px', 'max': '1120px' },
+                    'cs9': { 'min': '680px', 'max': '830px' },
+                    'cs-tentang': { 'min': '680px', 'max': '750px' },
+                    'xxl': '1920px',
+                },
             }
         }
     </script>
     @livewireStyles
 </head>
-<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] max-sm:overflow-x-hidden bg-center bg-contain">
+<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] cs5:overflow-x-hidden ml-auto mr-auto bg-center bg-contain">
     @livewire(name: 'loader')   
     @livewire(name: 'navbar')
     @livewire(name: 'pagekontak')
