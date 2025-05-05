@@ -45,7 +45,7 @@
     @livewire('navbar')
     @livewire('pageberita')
     @livewire('footer')
-    @livewireStyles
+    @livewireScripts
 </body>
     <script src="/js/loader.js"></script>
     <script src="/js/navigation.js"></script>

@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="w-[1280px] max-sm:grid-cols-1 max-sm:w-[327px] h-max grid grid-cols-3 auto-rows-auto ml-auto gap-7 mr-auto">
-        @forelse($paginatedBerita as $item)
+        @forelse($berita as $item)
             @php
                 $colors = [
                     "SIJA"   => "#D6205D",
@@ -53,17 +53,21 @@
                     "TITL"   => "#FE8D00",
                     "STEMBA" => "#111111",
                 ];
-                $hoverColor = $colors[$item["kategori"]] ?? "#1152D9";
+                $hoverColor = $colors[$item["category"]] ?? "#1152D9";
+
+                $images = is_array($item['image']) ? $item['image'] : json_decode($item['image'], true);
+                $images = array_reverse($images);
+                $firstImage = isset($images[0]) ? asset('storage/' . $images[0]) : '';
             @endphp
             <div class='bg-[#FFFFFF] max-sm:w-[327px] max-sm:h-max transition-all duration-300 border-opacity-100 border border-[#EBEBEB] rounded-[24px] p-5 w-full h-[448px] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)] hover:cursor-pointer'>
-                <div class='transition-all duration-300 max-sm:w-[295px] max-sm:h-[220px]  bg-[url({{ $item["gambar"] }})] h-[240px] w-[368px] rounded-[16px] border bg-cover bg-center relative mb-5 max-sm:mb-4'>
+                <div class='transition-all duration-300 max-sm:w-[295px] max-sm:h-[220px]  bg-[url({{ $firstImage }})] h-[240px] w-[368px] rounded-[16px] border bg-cover bg-center relative mb-5 max-sm:mb-4'>
                     <p class='transition-all duration-300 absolute right-3 top-3 uppercase py-2 px-5 font-manrope text-[16px] border border-[#EBEBEB] w-max rounded-full font-semibold bg-[#FFFFFF] text-[{{ $hoverColor }}]'>
-                        {{ $item["kategori"] }}
+                        {{ $item["category"] }}
                     </p>
                 </div>
-                <p class='font-manrope text-[16px] max-sm:text-[12px] text-[#525252] font-normal mb-3'>{{ $item["tanggal"] }}</p>
-                <p class='font-manrope text-[20px] max-sm:text-[18px] max-sm:max-w-[295px] max-sm:mb-2 font-semibold max-w-[368px] m-0 break-word uppercase line-clamp-2 mb-3'>{{ $item["judul"] }}</p>
-                <p class='font-manrope text-[14px] max-sm:text-[16px] text-[#525252] max-sm:w-[295px] font-normal w-[368px] m-0 break-word line-clamp-2'>{{ $item["deskripsi"] }}</p>
+                <p class='font-manrope text-[16px] max-sm:text-[12px] text-[#525252] font-normal mb-3'>{{ $item["created_at"] }}</p>
+                <p class='font-manrope text-[20px] max-sm:text-[18px] max-sm:max-w-[295px] max-sm:mb-2 font-semibold max-w-[368px] m-0 break-word uppercase line-clamp-2 mb-3'>{{ $item["title"] }}</p>
+                <p class='font-manrope text-[14px] max-sm:text-[16px] text-[#525252] max-sm:w-[295px] font-normal w-[368px] m-0 break-word line-clamp-2'>{{ $item["content"] }}</p>
             </div>
         @empty
             <p class="font-manrope text-[16px] text-[#525252] max-sm:text-[12px] col-span-3 text-center">Tidak ada berita yang ditemukan.</p>
@@ -74,18 +78,19 @@
             <span class="font-semibold">{{ ($currentPage - 1) * $perPage + 1 }}-{{ min($currentPage * $perPage, $total) }}</span> <span class="opacity-70">dari {{ $total }} informasi</span>
         </p>
         <div class="flex items-center gap-3">
-            <button 
-                wire:click="previousPage" 
-                class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope {{ $currentPage === 1 ? 'text-[#9CA0B5] cursor-not-allowed' : 'text-[#111111]' }}"
-                @if($currentPage === 1) disabled @endif
-            >
-                <
-            </button>
+            @if ($currentPage > 1)
+                <button 
+                    wire:click="previousPage" 
+                    class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope {{ $currentPage === 1 ? 'text-[#9CA0B5] cursor-not-allowed' : 'text-[#111111]' }}"
+                >
+            @endif
+                    <
+                </button>
             
             <div class="flex flex-row items-center gap-x-2">
                 @for ($i = $startPage; $i <= $endPage; $i++)
                     <button 
-                        wire:click="gotoPage({{ $i }})" 
+                        wire:click="gotoPage({{ $i }})"
                         class="px-1 transition-all duration-300 size-[32px] py-1 rounded-full text-center font-manrope {{ $currentPage === $i ? 'bg-[#1152D9] text-white' : 'bg-none text-[#111111] border border-none' }}"
                     >
                         {{ $i }}
@@ -93,31 +98,31 @@
                 @endfor
             </div>
             
-            <button 
-                wire:click="nextPage" 
-                class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope {{ $currentPage === $totalPages || $total === 0 ? 'text-[#9CA0B5] cursor-not-allowed' : 'text-[#111111]' }}"
-                @if($currentPage === $totalPages || $total === 0) disabled @endif
-            >
+            @if ($currentPage < $totalPages)
+                <button 
+                    wire:click="nextPage" 
+                    class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope {{ $currentPage === $totalPages || $total === 0 ? 'text-[#9CA0B5] cursor-not-allowed' : 'text-[#111111]' }}"
                 >
-            </button>
+            @endif
+                    >
+                </button>
         </div>
     </div>
 </section>
 
 <script>
-    document.getElementById('searchInput').addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            @this.call('searchBerita');
-        }
-    });
+    // document.getElementById('searchInput').addEventListener('keypress', function(e) {
+    //     if (e.key === 'Enter') {
+    //         e.preventDefault();
+    //         @this.call('searchBerita');
+    //     }
+    // });
 
     function updateDeviceType() {
         const isMobile = window.innerWidth < 640;
         @this.call('setDeviceType', isMobile);
     }
 
-    document.addEventListener('DOMContentLoaded', updateDeviceType);
-
+    document.addEventListener('DOMContentLoaded', () => updateDeviceType());
     window.addEventListener('resize', updateDeviceType);
 </script>

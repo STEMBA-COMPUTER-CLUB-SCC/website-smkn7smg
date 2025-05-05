@@ -97,6 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 document.addEventListener('click', (event) => {
+    const menuButton = document.getElementById('menu-button');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    const arrowIcon = document.getElementById('arrow-icon');
+    
     if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
         dropdownMenu.classList.remove('h-[0px]');
         arrowIcon.classList.remove('-rotate-90');
