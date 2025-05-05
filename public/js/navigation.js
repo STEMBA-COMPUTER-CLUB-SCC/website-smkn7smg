@@ -66,39 +66,37 @@ document.addEventListener('DOMContentLoaded', () => {
             sidebarMobile.classList.replace('translate-x-[-400px]', 'translate-x-[0px]');
         }
     })
-    if (window.location.pathname === "/jurusan/pplg") {
+    if (window.location.pathname === "/jurusan/sija") {
         document.getElementById('pplg-mobile').classList.add('text-[#1152D9]');
         document.getElementById('pplg-desktop').classList.add('text-[#1152D9]');
         document.getElementById('dot-pplg').classList.replace('bg-[#DEDEDE]', 'bg-[#1152D9]');
-    } else if (window.location.pathname === "/jurusan/kpbs") {
+    } else if (window.location.pathname === "/jurusan/kjij") {
         document.getElementById('kpbs-mobile').classList.add('text-[#1152D9]');
         document.getElementById('kpbs-desktop').classList.add('text-[#1152D9]');
         document.getElementById('dot-kpbs').classList.replace('bg-[#DEDEDE]', 'bg-[#1152D9]');
-    } else if (window.location.pathname === "/jurusan/tkp") {
+    } else if (window.location.pathname === "/jurusan/kgs") {
         document.getElementById('tkp-mobile').classList.add('text-[#1152D9]');
         document.getElementById('tkp-desktop').classList.add('text-[#1152D9]');
         document.getElementById('dot-tkp').classList.replace('bg-[#DEDEDE]', 'bg-[#1152D9]');
-    } else if (window.location.pathname === "/jurusan/to") {
+    } else if (window.location.pathname === "/jurusan/tkr") {
         document.getElementById('to-mobile').classList.add('text-[#1152D9]');
         document.getElementById('to-desktop').classList.add('text-[#1152D9]');
         document.getElementById('dot-to').classList.replace('bg-[#DEDEDE]', 'bg-[#1152D9]');
-    } else if (window.location.pathname === "/jurusan/te") {
-        document.getElementById('te-mobile').classList.add('text-[#1152D9]');
-        document.getElementById('te-desktop').classList.add('text-[#1152D9]');
-        document.getElementById('dot-te').classList.replace('bg-[#DEDEDE]', 'bg-[#1152D9]');
-    } else if (window.location.pathname === "/jurusan/tpfl") {
+    } else if (window.location.pathname === "/jurusan/tek") {
+        document.getElementById('tek-mobile').classList.add('text-[#1152D9]');
+        document.getElementById('tek-desktop').classList.add('text-[#1152D9]');
+        document.getElementById('dot-tek').classList.replace('bg-[#DEDEDE]', 'bg-[#1152D9]');
+    } else if (window.location.pathname === "/jurusan/tme") {
+        document.getElementById('tme-mobile').classList.add('text-[#1152D9]');
+        document.getElementById('tme-desktop').classList.add('text-[#1152D9]');
+        document.getElementById('dot-tme').classList.replace('bg-[#DEDEDE]', 'bg-[#1152D9]');
+    } else if (window.location.pathname === "/jurusan/tflm") {
         document.getElementById('tpfl-mobile').classList.add('text-[#1152D9]');
         document.getElementById('tpfl-desktop').classList.add('text-[#1152D9]');
         document.getElementById('dot-tpfl').classList.replace('bg-[#DEDEDE]', 'bg-[#1152D9]');
-    } else if (window.location.pathname === "/jurusan/tk") {
+    } else if (window.location.pathname === "/jurusan/titl") {
         document.getElementById('tk-mobile').classList.add('text-[#1152D9]');
         document.getElementById('tk-desktop').classList.add('text-[#1152D9]');
         document.getElementById('dot-tk').classList.replace('bg-[#DEDEDE]', 'bg-[#1152D9]');
-    }
-});
-document.addEventListener('click', (event) => {
-    if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
-        dropdownMenu.classList.remove('h-[0px]');
-        arrowIcon.classList.remove('-rotate-90');
     }
 });
