@@ -1,66 +1,88 @@
-<<<<<<< HEAD
 <section id="prestasi">
-    <div class="w-max max-sm:w-[327px] max-sm:mt-[110px] max-sm:mb-8 ml-auto mr-auto flex flex-col items-center mt-20 mb-16">
-        <div class="w-max flex flex-col items-center mb-16 max-sm:mb-8">
-            <div class="sectionBeranda flex bg-[#F7F7F7] text-[16px] max-sm:text-[12px] m-0 mb-6 max-sm:mb-8 font-manrope border border-[#ebebeb] w-max rounded-[80px] items-center pr-4 max-sm:pr-3 pl-1.5 max-sm:pl-1 pt-1.5 max-sm:pt-1 pb-1.5 max-sm:pb-1 gap-x-2">
-                <p class="bg-[#111111] text-[#FFFFFF] font-semibold border border-[#ebebeb] pt-1 pb-1 pl-3 pr-3 rounded-[80px]">PRESTASI</p>
-                <p class="text-[#525252] font-normal">INFORMASI KEJUARAAN</p>
-            </div>
-            <p class="font-manrope font-semibold text-[48px] text-[#111111] text-center mb-6 max-sm:mb-4 max-sm:text-[32px] max-sm:w-[193px]">INFORMASI PRESTASI</p>
-            <p class="font-manrope font-normal text-[20px] text-[#525252] text-center w-[543px] max-sm:w-[243px] max-sm:text-[14px]">Lihat dan baca mengenai seluruh informasi kejuaraan yang diraih siswa dan siswi SMKN 7 Semarang</p>
-        </div>
-        <div class="bg-[#FFFFFF] border border-[#EBEBEB] rounded-full w-[480px] flex flex-row items-center py-1 pr-1 pl-4 justify-between mb-6 max-sm:mb-4 max-sm:w-[327px]">
-            <input wire:model="search" wire:keydown.enter="searchPrestasi" class="text-[16px] border-none text-[#111111] w-[404px] focus:outline-none placeholder:text-[#525252] font-manrope font-normal max-sm:text-[12px]" type="text" name="" placeholder="Cari prestasi di SMKN 7 Semarang" id="searchInput">
-            <i wire:click="searchPrestasi" class="fa-solid fa-magnifying-glass text-[#FFFFFF] bg-[#1152D8] text-[20px] p-2 rounded-full hover:bg-[#007FFF] transition-all duration-300 ease-in-out max-sm:text-[18px] hover:cursor-pointer"></i>
-        </div>
+  <div
+    class="w-max max-sm:w-[327px] max-sm:mt-[110px] max-sm:mb-8 ml-auto mr-auto flex flex-col items-center mt-20 mb-16">
+    <div class="w-max flex flex-col items-center mb-16 max-sm:mb-8">
+      <div
+        class="sectionBeranda flex bg-[#F7F7F7] text-[16px] max-sm:text-[12px] m-0 mb-6 max-sm:mb-8 font-manrope border border-[#ebebeb] w-max rounded-[80px] items-center pr-4 max-sm:pr-3 pl-1.5 max-sm:pl-1 pt-1.5 max-sm:pt-1 pb-1.5 max-sm:pb-1 gap-x-2">
+        <p class="bg-[#111111] text-[#FFFFFF] font-semibold border border-[#ebebeb] pt-1 pb-1 pl-3 pr-3 rounded-[80px]">
+          PRESTASI</p>
+        <p class="text-[#525252] font-normal">INFORMASI KEJUARAAN</p>
+      </div>
+      <p
+        class="font-manrope font-semibold text-[48px] text-[#111111] text-center mb-6 max-sm:mb-4 max-sm:text-[32px] max-sm:w-[193px]">
+        INFORMASI PRESTASI</p>
+      <p
+        class="font-manrope font-normal text-[20px] text-[#525252] text-center w-[543px] max-sm:w-[243px] max-sm:text-[14px]">
+        Lihat dan baca mengenai seluruh informasi kejuaraan yang diraih siswa dan siswi SMKN 7 Semarang</p>
     </div>
-    <div class="w-[1280px] max-sm:grid-cols-1 max-sm:w-[327px] h-max grid grid-cols-3 auto-rows-auto ml-auto gap-7 mr-auto">
-        @forelse($prestasi as $item)
-            @php
-                $images = is_array($item['image']) ? $item['image'] : json_decode($item['image'], true);
-                $images = array_reverse($images);
-                $firstImage = isset($images[0]) ? asset('storage/' . $images[0]) : '';
-            @endphp
-            <div wire:click="goToDetail({{ $item['id'] }})" class='bg-[#FFFFFF] max-sm:w-[327px] max-sm:h-max transition-all duration-300 border-opacity-100 border border-[#EBEBEB] rounded-[24px] p-5 w-full h-[448px] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)] hover:cursor-pointer'>
-                <div class='transition-all duration-300 max-sm:w-[295px] max-sm:h-[220px] bg-[url({{ $firstImage }})] h-[240px] w-[368px] rounded-[16px] border bg-cover bg-center relative mb-5 max-sm:mb-4'></div>
-                <p class='font-manrope text-[16px] max-sm:text-[12px] text-[#525252] font-normal mb-3'>{{ \Carbon\Carbon::parse($item['created_at'])->translatedFormat('l, j F Y') }}</p>
-                <p class='font-manrope text-[20px] max-sm:text-[18px] font-semibold max-sm:max-w-[295px] max-w-[368px] m-0 break-word uppercase line-clamp-2 mb-3 max-sm:mb-2'>{{ $item['title'] }}</p>
-                <p class='font-manrope text-[14px] max-sm:text-[16px] text-[#525252] font-normal max-sm:w-[295px] w-[368px] m-0 break-word line-clamp-2'>{{ $item['content'] }}</p>
-            </div>
-        @empty
-            <p class="font-manrope text-[16px] text-[#525252] max-sm:text-[12px] col-span-3 text-center">Tidak ada informasi prestasi yang ditemukan.</p>
-        @endforelse
+    <div
+      class="bg-[#FFFFFF] border border-[#EBEBEB] rounded-full w-[480px] flex flex-row items-center py-1 pr-1 pl-4 justify-between mb-6 max-sm:mb-4 max-sm:w-[327px]">
+      <input wire:model="search" wire:keydown.enter="searchPrestasi"
+        class="text-[16px] border-none text-[#111111] w-[404px] focus:outline-none placeholder:text-[#525252] font-manrope font-normal max-sm:text-[12px]"
+        type="text" name="" placeholder="Cari prestasi di SMKN 7 Semarang" id="searchInput">
+      <i wire:click="searchPrestasi"
+        class="fa-solid fa-magnifying-glass text-[#FFFFFF] bg-[#1152D8] text-[20px] p-2 rounded-full hover:bg-[#007FFF] transition-all duration-300 ease-in-out max-sm:text-[18px] hover:cursor-pointer"></i>
     </div>
-    <div class="w-[1280px] max-sm:flex-col-reverse max-sm:w-[327px] max-sm:mt-8 max-sm:gap-y-3 max-sm:mb-10 flex flex-row justify-between mt-6 ml-auto mr-auto items-center mb-20">
-        <p class="font-manrope text-[14px] font-medium opacity-100 text-[#111111]">
-            <span class="font-semibold">{{ ($currentPage - 1) * $perPage + 1 }}-{{ min($currentPage * $perPage, $total) }}</span> <span class="opacity-70">dari {{ $total }} informasi</span>
-        </p>
-        <div class="flex items-center gap-3">
-            @if ($currentPage > 1)
-                <button wire:click="previousPage" class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope text-[#111111]">
-                    <
-                </button>
-            @endif
+  </div>
+  <div
+    class="w-[1280px] max-sm:grid-cols-1 max-sm:w-[327px] h-max grid grid-cols-3 auto-rows-auto ml-auto gap-7 mr-auto">
+    @forelse($prestasi as $item)
+    @php
+    $images = is_array($item['image']) ? $item['image'] : json_decode($item['image'], true);
+    $images = array_reverse($images);
+    $firstImage = isset($images[0]) ? asset('storage/' . $images[0]) : '';
+    @endphp
+    <div wire:click="goToDetail({{ $item['id'] }})"
+      class='bg-[#FFFFFF] max-sm:w-[327px] max-sm:h-max transition-all duration-300 border-opacity-100 border border-[#EBEBEB] rounded-[24px] p-5 w-full h-[448px] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)] hover:cursor-pointer'>
+      <div
+        class='transition-all duration-300 max-sm:w-[295px] max-sm:h-[220px] bg-[url({{ $firstImage }})] h-[240px] w-[368px] rounded-[16px] border bg-cover bg-center relative mb-5 max-sm:mb-4'>
+      </div>
+      <p class='font-manrope text-[16px] max-sm:text-[12px] text-[#525252] font-normal mb-3'>{{
+        \Carbon\Carbon::parse($item['created_at'])->translatedFormat('l, j F Y') }}</p>
+      <p
+        class='font-manrope text-[20px] max-sm:text-[18px] font-semibold max-sm:max-w-[295px] max-w-[368px] m-0 break-word uppercase line-clamp-2 mb-3 max-sm:mb-2'>
+        {{ $item['title'] }}</p>
+      <p
+        class='font-manrope text-[14px] max-sm:text-[16px] text-[#525252] font-normal max-sm:w-[295px] w-[368px] m-0 break-word line-clamp-2'>
+        {{ $item['content'] }}</p>
+    </div>
+    @empty
+    <p class="font-manrope text-[16px] text-[#525252] max-sm:text-[12px] col-span-3 text-center">Tidak ada informasi
+      prestasi yang ditemukan.</p>
+    @endforelse
+  </div>
+  <div
+    class="w-[1280px] max-sm:flex-col-reverse max-sm:w-[327px] max-sm:mt-8 max-sm:gap-y-3 max-sm:mb-10 flex flex-row justify-between mt-6 ml-auto mr-auto items-center mb-20">
+    <p class="font-manrope text-[14px] font-medium opacity-100 text-[#111111]">
+      <span class="font-semibold">{{ ($currentPage - 1) * $perPage + 1 }}-{{ min($currentPage * $perPage, $total)
+        }}</span> <span class="opacity-70">dari {{ $total }} informasi</span>
+    </p>
+    <div class="flex items-center gap-3">
+      @if ($currentPage > 1)
+      <button wire:click="previousPage"
+        class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope text-[#111111]">
+        < </button>
+          @endif
 
-            <div class="flex flex-row items-center gap-x-2">
-                @for ($i = $startPage; $i <= $endPage; $i++)
-                    <button wire:click="gotoPage({{ $i }})" class="px-1 transition-all duration-300 size-[32px] py-1 rounded-full text-center font-manrope {{ $currentPage === $i ? 'bg-[#1152D9] text-white' : 'bg-none text-[#111111] border border-none' }}">
-                        {{ $i }}
-                    </button>
-                @endfor
-            </div>
-
-            @if ($currentPage < $totalPages)
-                <button wire:click="nextPage" class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope text-[#111111]">
-                    >
-                </button>
-            @endif
-        </div>
+          <div class="flex flex-row items-center gap-x-2">
+            @for ($i = $startPage; $i <= $endPage; $i++) <button wire:click="gotoPage({{ $i }})"
+              class="px-1 transition-all duration-300 size-[32px] py-1 rounded-full text-center font-manrope {{ $currentPage === $i ? 'bg-[#1152D9] text-white' : 'bg-none text-[#111111] border border-none' }}">
+              {{ $i }}
+      </button>
+      @endfor
     </div>
+
+    @if ($currentPage < $totalPages) <button wire:click="nextPage"
+      class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope text-[#111111]">
+      >
+      </button>
+      @endif
+  </div>
+  </div>
 </section>
 
 <script>
-    document.getElementById('searchInput').addEventListener('keypress', function(e) {
+  document.getElementById('searchInput').addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             e.preventDefault();
             @this.call('searchPrestasi');
@@ -74,84 +96,4 @@
 
     document.addEventListener('DOMContentLoaded', () => updateDeviceType());
     window.addEventListener('resize', updateDeviceType);
-=======
-<section id="prestasi">
-    <div class="w-max cs5:w-[327px] ml-auto mr-auto flex flex-col items-center mt-20 cs5:mt-[110px] mb-12 cs5:mb-8">
-        <div class="w-max flex flex-col items-center mb-6 cs5:mb-8">
-            <div class="sectionBeranda flex bg-[#F7F7F7] text-[16px] cs5:text-[12px] m-0 mb-6 cs5:mb-8 font-manrope border border-[#ebebeb] w-max rounded-[80px] items-center pr-4 cs5:pr-3 pl-1.5 cs5:pl-1 pt-1.5 cs5:pt-1 pb-1.5 cs5:pb-1 gap-x-2">
-                <p class="bg-[#111111] text-[#FFFFFF] font-semibold border border-[#ebebeb] pt-1 pb-1 pl-3 pr-3 rounded-[80px]">PRESTASI</p>
-                <p class="text-[#525252] font-normal">INFORMASI KEJUARAAN</p>
-            </div>
-            <p class="font-manrope font-semibold cs5:w-[193px] text-[48px] cs5:text-[32px] text-[#111111] text-center mb-6 cs5:mb-4">INFORMASI PRESTASI</p>
-            <p class="font-manrope font-normal text-[20px] cs5:w-[243px] cs5:text-[14px] text-[#525252] text-center w-[543px]">Lihat dan baca mengenai seluruh informasi kejuaraan yang diraih siswa dan siswi SMKN 7 Semarang</p>
-        </div>
-        <div class="bg-[#FFFFFF] border border-[#EBEBEB] rounded-full w-[480px] cs5:w-[327px] flex flex-row items-center py-1 pr-1 pl-4 justify-between mb-6">
-            <input wire:model="search" wire:keydown.enter="searchPrestasi" class="text-[16px] cs5:text-[12px] border-none text-[#111111] w-[404px] focus:outline-none placeholder:text-[#525252] font-manrope font-normal" type="text" name="" placeholder="Cari prestasi di SMKN 7 Semarang" id="searchInput">
-            <i wire:click="searchPrestasi" class="fa-solid fa-magnifying-glass text-[#FFFFFF] bg-[#1152D8] text-[20px] p-2 rounded-full hover:bg-[#007FFF] transition-all duration-300 ease-in-out cs5:text-[18px] hover:cursor-pointer"></i>
-        </div>
-    </div>
-    <div class="w-[1280px] h-max grid grid-cols-3 cs5:grid-cols-1 cs5:w-[327px] auto-rows-auto ml-auto gap-7 cs5:gap-10 mr-auto cs6:grid-cols-2 cs6:w-max cs9:w-max cs9:grid-cols-1">
-        @forelse($paginatedPrestasi as $item)
-            <div class='cardPrestasi1 transition-all duration-300 cs5:w-[327px] w-[410px] h-[505px] cs5:h-[486px] rounded-[24px] p-5 bg-[#FFFFFF] border border-[#EBEBEB] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)] hover:cursor-pointer'>
-                <div class='bg-[url({{ $item["gambar"] }})] h-[240px] w-[368px] cs5:w-[295px] cs5:h-[220px] rounded-[16px] border bg-cover bg-center relative mb-5 cs5:mb-4'></div>
-                <p class='font-manrope text-[16px] cs5:text-[12px] text-[#525252] font-normal mb-3'>{{ $item["tanggal"] }}</p>
-                <p class='font-manrope text-[20px] cs5:text-[18px] font-semibold cs5:max-w-[295px] max-w-[368px] m-0 break-word uppercase line-clamp-2 mb-3 cs5:mb-2'>{{ $item["judul"] }}</p>
-                <p class='font-manrope text-[14px] cs5:text-[16px] text-[#525252] font-normal cs5:w-[295px] w-[368px] m-0 break-word line-clamp-2 mb-5'>{{ $item["deskripsi"] }}</p>
-                <p class='text-[#1152D8] font-manrope text-[14px] bg-[#F7F7F7] border border-[#EBEBEB] rounded-[90px] px-5 py-1.5 w-max font-semibold'>PRESTASI</p>
-            </div>
-        @empty
-            <p class="font-manrope text-[16px] cs5:text-[12px] text-[#525252] col-span-3 text-center">Tidak ada informasi prestasi yang ditemukan.</p>
-        @endforelse
-    </div>
-    <div class="w-[1280px] cs5:flex-col-reverse cs5:w-[327px] flex flex-row justify-between mt-6 cs5:mt-8 ml-auto mr-auto items-center cs5:gap-y-3 mb-20 cs5:mb-10 cs6:w-max cs9:w-max cs6:gap-x-10 cs9:gap-x-10">
-        <p class="font-manrope text-[14px] font-medium opacity-100 text-[#111111]">
-            <span class="font-semibold">{{ ($currentPage - 1) * $perPage + 1 }}-{{ min($currentPage * $perPage, $total) }}</span> <span class="opacity-70">dari {{ $total }} informasi</span>
-        </p>
-        <div class="flex items-center gap-3">
-            <button 
-                wire:click="previousPage" 
-                class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope {{ $currentPage === 1 ? 'text-[#9CA0B5] cursor-not-allowed' : 'text-[#111111]' }}"
-                @if($currentPage === 1) disabled @endif
-            >
-                <
-            </button>
-            
-            <div class="flex flex-row items-center gap-x-2">
-                @for ($i = $startPage; $i <= $endPage; $i++)
-                    <button 
-                        wire:click="gotoPage({{ $i }})" 
-                        class="px-1 transition-all duration-300 size-[32px] py-1 rounded-full text-center font-manrope {{ $currentPage === $i ? 'bg-[#1152D9] text-white' : 'bg-none text-[#111111] border border-none' }}"
-                    >
-                        {{ $i }}
-                    </button>
-                @endfor
-            </div>
-            
-            <button 
-                wire:click="nextPage" 
-                class="px-3 py-1 bg-[#F7F7F7] border border-[#EBEBEB] rounded-full font-manrope {{ $currentPage === $totalPages || $total === 0 ? 'text-[#9CA0B5] cursor-not-allowed' : 'text-[#111111]' }}"
-                @if($currentPage === $totalPages || $total === 0) disabled @endif
-            >
-                >
-            </button>
-        </div>
-    </div>
-</section>
-
-<script>
-    document.getElementById('searchInput').addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            @this.call('searchPrestasi');
-        }
-    });
-
-    function updateDeviceType() {
-        const isMobile = window.innerWidth < 640;
-        @this.call('setDeviceType', isMobile);
-    }
-
-    document.addEventListener('DOMContentLoaded', updateDeviceType);
-    window.addEventListener('resize', updateDeviceType);
->>>>>>> main
 </script>
