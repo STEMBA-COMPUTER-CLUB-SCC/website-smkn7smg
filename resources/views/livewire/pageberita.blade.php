@@ -59,13 +59,13 @@
                 $images = array_reverse($images);
                 $firstImage = isset($images[0]) ? asset('storage/' . $images[0]) : '';
             @endphp
-            <div class='bg-[#FFFFFF] max-sm:w-[327px] max-sm:h-max transition-all duration-300 border-opacity-100 border border-[#EBEBEB] rounded-[24px] p-5 w-full h-[448px] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)] hover:cursor-pointer'>
+            <div wire:click="goToDetail({{ $item['id'] }})" class='bg-[#FFFFFF] max-sm:w-[327px] max-sm:h-max transition-all duration-300 border-opacity-100 border border-[#EBEBEB] rounded-[24px] p-5 w-full h-[448px] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)] hover:cursor-pointer'>
                 <div class='transition-all duration-300 max-sm:w-[295px] max-sm:h-[220px]  bg-[url({{ $firstImage }})] h-[240px] w-[368px] rounded-[16px] border bg-cover bg-center relative mb-5 max-sm:mb-4'>
                     <p class='transition-all duration-300 absolute right-3 top-3 uppercase py-2 px-5 font-manrope text-[16px] border border-[#EBEBEB] w-max rounded-full font-semibold bg-[#FFFFFF] text-[{{ $hoverColor }}]'>
                         {{ $item["category"] }}
                     </p>
                 </div>
-                <p class='font-manrope text-[16px] max-sm:text-[12px] text-[#525252] font-normal mb-3'>{{ $item["created_at"] }}</p>
+                <p class='font-manrope text-[16px] max-sm:text-[12px] text-[#525252] font-normal mb-3'>{{ \Carbon\Carbon::parse($item->created_at)->translatedFormat('l, j F Y') }}</p>
                 <p class='font-manrope text-[20px] max-sm:text-[18px] max-sm:max-w-[295px] max-sm:mb-2 font-semibold max-w-[368px] m-0 break-word uppercase line-clamp-2 mb-3'>{{ $item["title"] }}</p>
                 <p class='font-manrope text-[14px] max-sm:text-[16px] text-[#525252] max-sm:w-[295px] font-normal w-[368px] m-0 break-word line-clamp-2'>{{ $item["content"] }}</p>
             </div>

@@ -3,22 +3,22 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Models\Blog;
 
 class Detailprestasi extends Component
 {
     public $thumbnailUrls = [];
     public $activeIndex = 0;
-    public $direction = 'forward'; 
+    public $direction = 'forward';
+    public $blog;
 
-    public function mount()
+    public function mount($id )
     {
-        $this->thumbnailUrls = [
-            "/assets/image/prestasi/band.png",
-            "/assets/image/prestasi/traspac.png",
-            "/assets/image/prestasi/cj.png",
-            "/assets/image/prestasi/band.png",
-            "/assets/image/prestasi/band.png",
-        ];
+        $blog = Blog::findOrFail($id);
+        $this->blog = $blog;
+        $this->thumbnailUrls = collect($blog->image)->map(function ($filename) {
+            return asset('storage/' . $filename);
+        })->toArray();
     }
 
     public function nextImage()
@@ -67,8 +67,23 @@ class Detailprestasi extends Component
         }
     }
 
+    public function goToPage($id)
+    {
+        return redirect()->to('/prestasi/detail/' . $id);
+    }
+
     public function render()
     {
-        return view('livewire.detailprestasi');
+        return view('livewire.detailprestasi', [
+            'blog' => $this->blog,
+            'latestNews' => Blog::where('id', '!=', $this->blog->id)
+                ->where('category', 'prestasi')
+                ->latest()
+                ->take(3)
+                ->get(),
+            'thumbnailUrls' => $this->thumbnailUrls,
+            'activeIndex' => $this->activeIndex,
+            'direction' => $this->direction
+        ]);
     }
 }

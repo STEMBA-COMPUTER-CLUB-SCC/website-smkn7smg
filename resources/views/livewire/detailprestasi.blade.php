@@ -8,7 +8,7 @@
             <div class='flex flex-row max-sm:flex-col max-sm:gap-y-5 gap-x-7 mb-10 max-sm:mb-8'>
                 <div 
                     class='relative w-[692px] max-sm:w-[325px] max-sm:h-[207px] h-[440px] rounded-[24px] max-sm:rounded-[12px] bg-cover bg-center transition-all ease-in-out duration-200'
-                    :style="'background-image: url(' + {{ json_encode($thumbnailUrls[$activeIndex]) }} + ')'"
+                    style="background-image: url('{{ $thumbnailUrls[$activeIndex] }}')"
                 >
                 @if($activeIndex > 0)
                     <img 
@@ -46,17 +46,9 @@
                 </div>
             </div>
         </div>
-        <p class='font-manrope text-[24px] max-sm:text-[14px] font-normal text-[#525252] mb-7 max-sm:mb-4'>Sabtu, 8 Maret 2025</p>
-        <p class='font-manrope text-[28px] max-sm:text-[18px] font-semibold leading-[150%] text-[#111111] max-w-[715px] max-sm:max-w-[327px] uppercase mb-7'>Berprestasi di Ajang Lomba Band Dies Natalis ke-6 Fakultas Kedokteran Universitas Katolik Soegijapranata Tahun 2025
-        <p class='whitespace-pre-line font-manrope text-[16px] max-sm:text-[14px] font-normal text-[#111111] max-w-[715px] max-sm:max-w-[327px]'>Final Lomba Band dalam rangka Dies Natalis ke-6 Fakultas Kedokteran Universitas Katolik Soegijapranata (SCU) diadakan pada Jumat, 07 Maret 2025 pukul 14.00 – 19.00 WIB. Acara ini berlangsung di Fakultas Kedokteran SCU, BSB City, Kota Semarang.<br>
-    Salah satu finalis adalah Tim Band dari SMK Negeri 7 Semarang dibawah asuhan guru Seni Budaya - Atik Supriyantini, S.Pd. dengan nama group 7 Line yang beranggotakan :
-Vionaila Veda Zazqiathakirana - X TKP 1 - sebagai Vokalis
-Alvian Setyo Nugroho - X PPLG 1 - sebagai Gitaris
-Restu Galih Pratama -  X PPLG 2 - sebagai Bassis
-Ibtakhara Raffi Sucipto - X PPLG 1 - sebagai Drumer
-Radyan Ayoe Tanaya Asthagyna - SMA 10 Senarang, sebagai Player Keyboard
-
-Setelah melewati beberapa tahapan penilaian dari dewan juri, Alhamdulillah 7 Line berhasil meraih prestasi terbaik sebagai Juara I. Selamat kepada Tim Band Stemba Semarang (7 Line) beserta pembimbingnya atas prestasi yang telah diraih. Berikut sebagian cuplikan liputan kegiatan tersebut.</p>
+        <p class='font-manrope text-[24px] max-sm:text-[14px] font-normal text-[#525252] mb-7 max-sm:mb-4'>{{ \Carbon\Carbon::parse($blog->created_at)->translatedFormat('l, j F Y') }}</p>
+        <p class='font-manrope text-[28px] max-sm:text-[18px] font-semibold leading-[150%] text-[#111111] max-w-[715px] max-sm:max-w-[327px] uppercase mb-7'>{{ $blog->title }}</p>
+        <p class='whitespace-pre-line font-manrope text-[16px] max-sm:text-[14px] font-normal text-[#111111] max-w-[715px] max-sm:max-w-[327px]'>{{ $blog->content }}</p>
     </div>
     <div class='w-[408px] max-sm:w-[327px] max-sm:ml-auto max-sm:mr-auto h-max max-sm:mb-10'>
         <div class='flex items-center mb-7 justify-between'>
@@ -69,27 +61,15 @@ Setelah melewati beberapa tahapan penilaian dari dewan juri, Alhamdulillah 7 Li
             </a>
         </div>
         <div class='flex flex-col gap-y-7 max-sm:h-max'>
-            <div class='cardPrestasi1 transition-all duration-300 group/berita1 max-sm:w-[327px] w-[410px] h-[505px] max-sm:h-[486px] rounded-[24px] p-5 bg-[#FFFFFF] border border-[#EBEBEB] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)]'>
-                <div class='bg-[url(/assets/image/prestasi/band.png)] h-[240px] w-[368px] max-sm:w-[295px] max-sm:h-[220px] rounded-[16px] border bg-cover bg-center relative mb-5 max-sm:mb-4'></div>
-                <p class='font-manrope text-[16px] max-sm:text-[12px] text-[#525252] font-normal mb-3'>Sabtu, 8 maret 2025</p>
-                <p class='font-manrope text-[20px] max-sm:text-[18px] font-semibold max-sm:max-w-[295px] max-w-[368px] m-0 break-word uppercase line-clamp-2 mb-3 max-sm:mb-2'>Lomba Band Dies Natalis ke-6 Universitas Katolik Soegijapranata Tahun 2025</p>
-                <p class='font-manrope text-[14px] max-sm:text-[16px] text-[#525252] font-normal max-sm:w-[295px] w-[368px] m-0 break-word line-clamp-2 mb-5'>Setelah melewati beberapa tahapan penilaian dari dewan juri, Alhamdulillah 7 Line berhasil meraih prestasi terbaik sebagai Juara I. Selamat kepada Tim Band Stemba Semarang (7 Line) beserta pembimbingnya atas prestasi yang telah diraih. Berikut sebagian cuplikan liputan kegiatan tersebut.</p>
+            @foreach ($latestNews as $news)
+            <div wire:click="goToPage({{ $news->id }})" class='cardPrestasi1 transition-all duration-300 group/berita1 max-sm:w-[327px] w-[410px] h-[505px] max-sm:h-[486px] rounded-[24px] p-5 bg-[#FFFFFF] border border-[#EBEBEB] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)]'>
+                <div class='h-[240px] w-[368px] max-sm:w-[295px] max-sm:h-[220px] rounded-[16px] border bg-cover bg-center relative mb-5 max-sm:mb-4' style="background-image: url('{{ asset('storage/' . ($news->image[0] ?? null)) }}')"></div>
+                <p class='font-manrope text-[16px] max-sm:text-[12px] text-[#525252] font-normal mb-3'>{{ \Carbon\Carbon::parse($news->created_at)->translatedFormat('l, j F Y') }}</p>
+                <p class='font-manrope text-[20px] max-sm:text-[18px] font-semibold max-sm:max-w-[295px] max-w-[368px] m-0 break-word uppercase line-clamp-2 mb-3 max-sm:mb-2'>{{ $news->title }}</p>
+                <p class='font-manrope text-[14px] max-sm:text-[16px] text-[#525252] font-normal max-sm:w-[295px] w-[368px] m-0 break-word line-clamp-2 mb-5'>{{ \Illuminate\Support\Str::limit(strip_tags($news->content), 120) }}</p>
                 <p class='text-[#1152D8] font-manrope text-[14px] bg-[#F7F7F7] border border-[#EBEBEB] rounded-[90px] px-5 py-1.5 w-max font-semibold'>PRESTASI</p>
             </div>
-            <div class='cardPrestasi2 max-sm:hidden transition-all duration-300 group/berita2 max-sm:w-[327px] w-[410px] h-[505px] max-sm:h-[486px] rounded-[24px] p-5 bg-[#FFFFFF] border border-[#EBEBEB] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)]'>
-                <div class='bg-[url(/assets/image/prestasi/traspac.png)] h-[240px] w-[368px] max-sm:w-[295px] max-sm:h-[220px] rounded-[16px] border bg-cover bg-center relative mb-5 max-sm:mb-4'></div>
-                <p class='font-manrope text-[16px] max-sm:text-[12px] text-[#525252] font-normal mb-3'>Jumat, 01 maret 2025</p>
-                <p class='font-manrope text-[20px] max-sm:text-[18px] font-semibold max-sm:max-w-[295px] max-w-[368px] m-0 break-word uppercase line-clamp-2 mb-3 max-sm:mb-2'>Siswa SIJA Berprestasi di Ajang Traspac Competition Tahun 2025</p>
-                <p class='font-manrope text-[14px] max-sm:text-[16px] text-[#525252] font-normal max-sm:w-[295px] w-[368px] m-0 break-word line-clamp-2 mb-5'>PT Traspac Makmur Sejahtera adalah salah satu perusahaan yang bergerak di bidang teknologi informasi yang berkonsentrasi di bidang menciptakan budaya digital organisasi dengan peningkatan kompetensi digital SDM, perancangan kembali proses kerja berbasis digital, dan pemanfaatan optimal teknologi informasi Artificial intelligence, Internet of Things, Big Data.</p>
-                <p class='text-[#1152D8] font-manrope text-[14px] bg-[#F7F7F7] border border-[#EBEBEB] rounded-[90px] px-5 py-1.5 w-max font-semibold'>PRESTASI</p>
-            </div>
-            <div class='cardPrestasi3 max-sm:hidden transition-all duration-300 group/berita3 max-sm:w-[327px] w-[410px] h-[505px] max-sm:h-[486px] rounded-[24px] p-5 bg-[#FFFFFF] border border-[#EBEBEB] hover:border-[#1152D9] hover:border-opacity-30 hover:shadow-[2px_2px_14px_rgba(17,82,217,0.15)]'>
-                <div class='bg-[url(/assets/image/prestasi/cj.png)] h-[240px] w-[368px] max-sm:w-[295px] max-sm:h-[220px] rounded-[16px] border bg-cover bg-center relative mb-5 max-sm:mb-4'></div>
-                <p class='font-manrope text-[16px] max-sm:text-[12px] text-[#525252] font-normal mb-3'>Selasa, 27 Februari 2025</p>
-                <p class='font-manrope text-[20px] max-sm:text-[18px] font-semibold max-sm:max-w-[295px] max-w-[368px] m-0 break-word uppercase line-clamp-2 mb-3 max-sm:mb-2'>Prestasi Juara 2 di CyberJawara CTF 2024 kategori pelajar</p>
-                <p class='font-manrope text-[14px] max-sm:text-[16px] text-[#525252] font-normal max-sm:w-[295px] w-[368px] m-0 break-word line-clamp-2 max-sm:mb-4 mb-5'>Setelah melewati beberapa tahapan penilaian dari dewan juri, Alhamdulillah 7 Line berhasil meraih prestasi terbaik sebagai Juara I. Selamat kepada Tim Band Stemba Semarang (7 Line) beserta pembimbingnya atas prestasi yang telah diraih. Berikut sebagian cuplikan liputan kegiatan tersebut.</p>
-                <p class='text-[#1152D8] font-manrope text-[14px] bg-[#F7F7F7] border border-[#EBEBEB] rounded-[90px] px-5 py-1.5 w-max font-semibold'>PRESTASI</p>
-            </div>
+            @endforeach
         </div>
     </div>
 </div>

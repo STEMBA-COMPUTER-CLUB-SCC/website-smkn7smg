@@ -110,6 +110,11 @@ class Pageberita extends Component
     ]);
   }
 
+  public function goToDetail($id)
+  {
+    return redirect()->to('/berita/detail/' . $id);
+  }
+
   public function nextPage()
   {
     $this->setPage($this->page + 1);

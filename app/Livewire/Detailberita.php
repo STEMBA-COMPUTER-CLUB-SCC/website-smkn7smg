@@ -3,21 +3,22 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Models\Blog;
 
 class Detailberita extends Component
 {
     public $thumbnailUrls = [];
     public $activeIndex = 0;
     public $direction = 'forward'; 
+    public $blog;
 
-    public function mount()
+    public function mount($id)
     {
-        $this->thumbnailUrls = [
-            "/assets/image/berita/band.png",
-            "/assets/image/berita/traspac.png",
-            "/assets/image/berita/sosialisasi.png",
-            "/assets/image/berita/band2.png"
-        ];
+        $blog = Blog::findOrFail($id);
+        $this->blog = $blog;
+        $this->thumbnailUrls = collect($blog->image)->map(function ($filename) {
+            return asset('storage/' . $filename);
+        })->toArray();
     }
 
     public function nextImage()
@@ -66,8 +67,25 @@ class Detailberita extends Component
         }
     }
 
+    public function goToPage($id)
+    {
+        return redirect()->to('/berita/detail/' . $id);
+    }
+
     public function render()
     {
-        return view('livewire.detailberita');
+        return view('livewire.detailberita', [
+            'blog' => $this->blog,
+            'latestNews' => Blog::where('id', '!=', $this->blog->id)
+                ->where('category', 'berita')
+                ->latest()
+                ->take(3)
+                ->get(),
+            'thumbnailUrls' => $this->thumbnailUrls,
+            'activeIndex' => $this->activeIndex,
+            'direction' => $this->direction
+        ]);
+
+
     }
 }

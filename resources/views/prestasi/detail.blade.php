@@ -30,7 +30,7 @@
 <body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain bg-center">
     @livewire('loader')
     @livewire('navbar')
-    @livewire('detailprestasi')
+    @livewire('detailprestasi', ['id' => $id])
     @livewire('footer')
     @livewireStyles
 </body>

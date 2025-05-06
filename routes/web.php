@@ -18,7 +18,7 @@ Route::get('/berita', function () {
   return view('berita.berita');
 });
 
-Route::get('/berita/detail{id}', function ($id) {
+Route::get('/berita/detail/{id}', function ($id) {
   return view('berita.detail', compact('id'));
 });
 
@@ -26,6 +26,6 @@ Route::get('/prestasi', function () {
   return view('prestasi.prestasi');
 });
 
-Route::get('/prestasi/detail{id}', function ($id) {
-  return view('prestasi.prestasi', compact('id'));
+Route::get('/prestasi/detail/{id}', function ($id) {
+  return view('prestasi.detail', compact('id'));
 });
