@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "5623f1cba8f42c4ab38885abd7540a9f",
+  "content-hash": "42b9ec49cc3a21db2c144592fef0a701",
   "packages": [
     {
       "name": "anourvalar/eloquent-serialize",
@@ -2025,6 +2025,53 @@
       "time": "2025-04-01T14:41:56+00:00"
     },
     {
+      "name": "laravel-lang/lang",
+      "version": "4.0.11",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/Laravel-Lang/lang.git",
+        "reference": "134e1cbf9be14d97fc7937d7df784eae2d4bfa3c"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/134e1cbf9be14d97fc7937d7df784eae2d4bfa3c",
+        "reference": "134e1cbf9be14d97fc7937d7df784eae2d4bfa3c",
+        "shasum": ""
+      },
+      "require": {
+        "ext-json": "*"
+      },
+      "suggest": {
+        "ablunier/laravel-lang-installer": "Command for easily add languages to a Laravel project",
+        "andrey-helldar/laravel-lang-publisher": "Easy installation and update of translation files for your project",
+        "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
+        "overtrue/laravel-lang": "Command to add languages in your project"
+      },
+      "type": "library",
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "caouecs",
+          "email": "caouecs@caouecs.net"
+        }
+      ],
+      "description": "Languages for Laravel",
+      "keywords": [
+        "lang",
+        "languages",
+        "laravel",
+        "lpm"
+      ],
+      "support": {
+        "issues": "https://github.com/Laravel-Lang/lang/issues",
+        "source": "https://github.com/Laravel-Lang/lang/tree/4.0.11"
+      },
+      "time": "2020-03-17T15:24:26+00:00"
+    },
+    {
       "name": "laravel/framework",
       "version": "v12.12.0",
       "source": {
@@ -2427,16 +2474,16 @@
     },
     {
       "name": "league/commonmark",
-      "version": "2.6.2",
+      "version": "2.7.0",
       "source": {
         "type": "git",
         "url": "https://github.com/thephpleague/commonmark.git",
-        "reference": "06c3b0bf2540338094575612f4a1778d0d2d5e94"
+        "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/06c3b0bf2540338094575612f4a1778d0d2d5e94",
-        "reference": "06c3b0bf2540338094575612f4a1778d0d2d5e94",
+        "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
+        "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
         "shasum": ""
       },
       "require": {
@@ -2530,7 +2577,7 @@
           "type": "tidelift"
         }
       ],
-      "time": "2025-04-18T21:09:27+00:00"
+      "time": "2025-05-05T12:20:28+00:00"
     },
     {
       "name": "league/config",
@@ -9817,7 +9864,8 @@
   "prefer-stable": true,
   "prefer-lowest": false,
   "platform": {
-    "php": "^8.2"
+    "php": "^8.2",
+    "ext-mbstring": "*"
   },
   "platform-dev": [],
   "plugin-api-version": "2.3.0"

@@ -29,3 +29,7 @@ Route::get('/prestasi', function () {
 Route::get('/prestasi/detail/{id}', function ($id) {
   return view('prestasi.detail', compact('id'));
 });
+
+Route::get('/php', function () {
+  phpinfo();
+});

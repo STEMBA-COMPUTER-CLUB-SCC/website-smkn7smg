@@ -51,7 +51,7 @@
 <body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain">
   @livewire('loader')
   @livewire('navbar')
-  @livewire('detailberita')
+  @livewire('detailberita', ['id' => $id])
   @livewire('footer')
   @livewireStyles
 </body>
