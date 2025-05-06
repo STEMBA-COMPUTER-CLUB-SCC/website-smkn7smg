@@ -10,4 +10,9 @@ use Illuminate\Support\Facades\Storage;
 class CreateBlog extends CreateRecord
 {
     protected static string $resource = BlogResource::class;
+
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
 }
