@@ -21,56 +21,56 @@ class Pageberita extends Component
 
   private function parseIndonesianDate($dateString)
   {
-      $dateParts = explode(', ', $dateString);
-      $dateWithoutDay = $dateParts[1];
+    $dateParts = explode(', ', $dateString);
+    $dateWithoutDay = $dateParts[1];
 
-      $months = [
-          'Januari' => 'January',
-          'Februari' => 'February',
-          'Maret' => 'March',
-          'April' => 'April',
-          'Mei' => 'May',
-          'Juni' => 'June',
-          'Juli' => 'July',
-          'Agustus' => 'August',
-          'September' => 'September',
-          'Oktober' => 'October',
-          'November' => 'November',
-          'Desember' => 'December',
-      ];
+    $months = [
+      'Januari' => 'January',
+      'Februari' => 'February',
+      'Maret' => 'March',
+      'April' => 'April',
+      'Mei' => 'May',
+      'Juni' => 'June',
+      'Juli' => 'July',
+      'Agustus' => 'August',
+      'September' => 'September',
+      'Oktober' => 'October',
+      'November' => 'November',
+      'Desember' => 'December',
+    ];
 
-      [$day, $month, $year] = explode(' ', $dateWithoutDay);
-      $monthEnglish = $months[$month];
-      $parsedDate = "$day $monthEnglish $year";
+    [$day, $month, $year] = explode(' ', $dateWithoutDay);
+    $monthEnglish = $months[$month];
+    $parsedDate = "$day $monthEnglish $year";
 
-      return strtotime($parsedDate);
+    return strtotime($parsedDate);
   }
 
   public function updatingSearch()
   {
-      $this->resetPage();
+    $this->resetPage();
   }
 
   public function toggleCategory($category)
   {
-      if (in_array($category, $this->selectedCategories)) {
-          $this->selectedCategories = array_diff($this->selectedCategories, [$category]);
-      } else {
-          $this->selectedCategories[] = $category;
-      }
-      $this->resetPage();
+    if (in_array($category, $this->selectedCategories)) {
+      $this->selectedCategories = array_diff($this->selectedCategories, [$category]);
+    } else {
+      $this->selectedCategories[] = $category;
+    }
+    $this->resetPage();
   }
 
   public function searchBerita()
   {
-      $this->resetPage();   
+    $this->resetPage();
   }
 
   public function setDeviceType($isMobile)
   {
-      $this->isMobile = $isMobile;
-      $this->perPage = $this->isMobile ? 3 : 6;
-      $this->resetPage(); 
+    $this->isMobile = $isMobile;
+    $this->perPage = $this->isMobile ? 3 : 6;
+    $this->resetPage();
   }
 
   public function render()
@@ -101,7 +101,7 @@ class Pageberita extends Component
 
     return view('livewire.pageberita', [
       'berita' => $berita,
-      'currentPage' =>$berita->currentPage(),
+      'currentPage' => $berita->currentPage(),
       'totalPages' => $berita->lastPage(),
       'totalPages' => $lastPage,
       'startPage' => $startPage,
@@ -120,7 +120,8 @@ class Pageberita extends Component
     $this->setPage($this->page + 1);
   }
 
-  public function previousPage() {
+  public function previousPage()
+  {
     $this->setPage($this->page - 1);
   }
 
