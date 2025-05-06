@@ -2025,6 +2025,7 @@
             "time": "2025-04-01T14:41:56+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laravel-lang/lang",
             "version": "4.0.11",
             "source": {
@@ -2081,6 +2082,17 @@
             },
             "dist": {
                 "type": "zip",
+=======
+            "name": "laravel/framework",
+            "version": "v12.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "8f6cd73696068c28f30f5964556ec9d14e5d90d7"
+            },
+            "dist": {
+                "type": "zip",
+>>>>>>> main
                 "url": "https://api.github.com/repos/laravel/framework/zipball/8f6cd73696068c28f30f5964556ec9d14e5d90d7",
                 "reference": "8f6cd73696068c28f30f5964556ec9d14e5d90d7",
                 "shasum": ""
@@ -2474,6 +2486,7 @@
         },
         {
             "name": "league/commonmark",
+<<<<<<< HEAD
             "version": "2.7.0",
             "source": {
                 "type": "git",
@@ -2484,6 +2497,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
                 "reference": "6fbb36d44824ed4091adbcf4c7d4a3923cdb3405",
+=======
+            "version": "2.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "06c3b0bf2540338094575612f4a1778d0d2d5e94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/06c3b0bf2540338094575612f4a1778d0d2d5e94",
+                "reference": "06c3b0bf2540338094575612f4a1778d0d2d5e94",
+>>>>>>> main
                 "shasum": ""
             },
             "require": {
@@ -2577,7 +2602,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-05-05T12:20:28+00:00"
+=======
+            "time": "2025-04-18T21:09:27+00:00"
+>>>>>>> main
         },
         {
             "name": "league/config",
