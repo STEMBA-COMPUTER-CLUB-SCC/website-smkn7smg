@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Tag;
+use Filament\Forms\Components\TagsInput;
 
 class TagSeeder extends Seeder
 {
@@ -12,19 +13,14 @@ class TagSeeder extends Seeder
    */
   public function run()
   {
-    $tags = [
-      'Prestasi',
-      'Berita',
-      'Kegiatan',
-      'Pengumuman',
-      'Artikel',
-      'Lainnya'
-    ];
-
-    foreach ($tags as $tag) {
-      Tag::create([
-        'name' => strtolower($tag),
-      ]);
-    }
+    TagsInput::make('tags')->suggestions([
+      'SIJA',
+      "TE",
+      'TO',
+      'KPBS',
+      'TKP',
+      'TKL',
+      'TFLM',
+    ]);
   }
 }
