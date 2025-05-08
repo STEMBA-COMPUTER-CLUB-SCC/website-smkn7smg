@@ -2,11 +2,74 @@
 <html lang="id" class="scroll-smooth">
 
 <head>
+  <!-- Basic Meta Tags -->
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hubungi Kami</title>
+
+  <title>Hubungi Kami - SMKN 7 Semarang</title>
+  <meta name="description"
+    content="Hubungi SMKN 7 Semarang untuk informasi lebih lanjut mengenai pendaftaran siswa baru, program pendidikan, atau layanan lainnya. Kami siap membantu Anda!">
+  <meta name="keywords"
+    content="kontak SMKN 7 Semarang, alamat SMKN 7 Semarang, nomor telepon SMKN 7 Semarang, email SMKN 7 Semarang">
+  <meta name="author" content="SMKN 7 Semarang">
+  <link rel="canonical" href="https://smkn7semarang.sch.id/kontak">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hubungi SMKN 7 Semarang - Informasi Kontak Lengkap">
+  <meta property="og:description"
+    content="Dapatkan informasi kontak SMKN 7 Semarang untuk pendaftaran, program pendidikan, dan layanan lainnya. Kami siap melayani Anda.">
+  <meta property="og:url" content="https://smkn7semarang.sch.id/kontak">
+  <meta property="og:image" content="{{ asset('assets/image/image2.png') }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hubungi SMKN 7 Semarang - Informasi Kontak Lengkap">
+  <meta name="twitter:description"
+    content="Dapatkan informasi kontak SMKN 7 Semarang untuk pendaftaran, program pendidikan, dan layanan lainnya. Kami siap melayani Anda.">
+  <meta name="twitter:image" content="{{ asset('assets/image/image2.png') }}">
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ asset('assets/logo/logo_stemba.png') }}" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/logo/logo180.svg') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/logo/logo32.svg') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/logo/logo16.svg') }}">
+
+  <!-- Robots Meta Tag -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Schema.org Contact Information (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "SMKN 7 Semarang",
+            "url": "https://smkn7semarang.sch.id",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "(024) 8311532",
+                "contactType": "Customer Service",
+                "areaServed": "ID",
+                "availableLanguage": "Indonesian"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Jl. Simpang Lima No.1, RT.02/RW.01, Mugassari, Kec. Semarang Selatan",
+                "addressLocality": "Semarang",
+                "addressRegion": "Jawa Tengah",
+                "postalCode": "50249",
+                "addressCountry": "ID"
+            }
+        }
+    }
+  </script>
+
   @vite('resources/css/app.css')
-  <link rel="stylesheet" href="/css/app.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
