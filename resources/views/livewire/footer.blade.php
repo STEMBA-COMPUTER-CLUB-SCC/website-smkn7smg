@@ -54,26 +54,26 @@
               <p class='font-normal text-[18px] text-[#686971]'>(024) 8311532</p>
             </div>
             <div class='flex flex-row gap-x-2 cs5:w-max cs5:ml-auto cs5:mr-auto'>
-              <div
+              <a href="https://www.youtube.com/@SMKNegeri7Semarang" target="_blank" rel="noopener noreferrer"
                 class='p-3 transition-all duration-300 hover:border-[#1152D9] cursor-pointer border border-[#DFE3EB] rounded-[12px]'>
                 <img src="/assets/icon/youtube.svg" class='size-[28px]' alt="">
-              </div>
-              <div
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@smknegeri7semarang"
                 class='p-3 transition-all duration-300 hover:border-[#1152D9] cursor-pointer border border-[#DFE3EB] rounded-[12px]'>
-                <img src="/assets/icon/x.svg" class='w-[28px]' alt="">
-              </div>
-              <div
+                <img src="/assets/icon/tiktok.svg" class='w-[28px]' alt="">
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/smknegeri7semarang/"
                 class='p-3 transition-all duration-300 hover:border-[#1152D9] cursor-pointer border border-[#DFE3EB] rounded-[12px]'>
                 <img src="/assets/icon/instagram.svg" class='w-[28px]' alt="">
-              </div>
-              <div
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/smknegeri7semarang/"
                 class='p-3 transition-all duration-300 hover:border-[#1152D9] cursor-pointer border border-[#DFE3EB] rounded-[12px]'>
                 <img src="/assets/icon/facebook.svg" class='w-[28px]' alt="">
-              </div>
-              <div
+              </a>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/school/smk-negeri-7-semarang/"
                 class='p-3 transition-all duration-300 hover:border-[#1152D9] cursor-pointer border border-[#DFE3EB] rounded-[12px]'>
                 <img src="/assets/icon/linkedin.svg" class='w-[28px]' alt="">
-              </div>
+              </a>
             </div>
           </div>
         </div>
