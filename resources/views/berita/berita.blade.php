@@ -50,8 +50,6 @@
   @livewire('footer')
   @livewireScripts
 </body>
-<script src="/js/loader.js"></script>
-<script src="/js/navigation.js"></script>
-<script src="/js/app.js"></script>
+@vite(['resources/js/app.js', 'resources/js/navigation.js', 'resources/js/loader.js'])
 
 </html>

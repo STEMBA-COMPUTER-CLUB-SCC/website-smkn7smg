@@ -44,5 +44,5 @@
     <a href="/prestasi"
       class='bg-[#1152D9] w-max font-manrope px-8 py-2.5 border rounded-[42px] text-[16px] text-[#ffffff] font-semibold ml-auto mr-auto block'>Selengkapnya</a>
   </div>
+  @vite('resources/js/animate/landing/prestasi.js')
 </section>
-<script src="/js/animate/landing/prestasi.js"></script>

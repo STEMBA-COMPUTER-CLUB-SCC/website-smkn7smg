@@ -36,5 +36,5 @@
   </div>
   <a href="/berita"
     class='bg-[#1152D9] w-max font-manrope px-8 py-2.5 border rounded-[42px] text-[16px] text-[#ffffff] font-semibold ml-auto mr-auto block mb-20 max-sm:mb-10'>Selengkapnya</a>
+  @vite('resources/js/animate/landing/berita.js')
 </section>
-<script src="/js/animate/landing/berita.js"></script>
