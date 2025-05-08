@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Berita SMK Negeri 7 Semarang</title>
   @vite('resources/css/app.css')
-  @vite('resources/css/scrollbar.css')
+  {{-- @vite('resources/css/') --}}
   {{--
   <link rel="stylesheet" href="/css/app.css">
   <link rel="stylesheet" href="/css/scrollbar.css"> --}}
