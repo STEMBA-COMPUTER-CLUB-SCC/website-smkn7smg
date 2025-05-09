@@ -29,7 +29,8 @@
               <div class='text-[#686971] text-[18px] flex flex-col gap-y-3'>
                 <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Beranda</p>
                 <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Tentang</p>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Jurusan</p>
+                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Konsentrasi Keahlian
+                </p>
                 <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Berita</p>
                 <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Prestasi</p>
               </div>

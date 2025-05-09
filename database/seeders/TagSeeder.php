@@ -21,6 +21,7 @@ class TagSeeder extends Seeder
       'TKP',
       'TKL',
       'TFLM',
+      'STEMBA'
     ]);
   }
 }

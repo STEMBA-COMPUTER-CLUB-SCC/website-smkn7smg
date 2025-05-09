@@ -22,7 +22,7 @@
         <div class="relative group">
           <a href="/#jurusan">
             <button id="nav-jurusan" class="flex items-center gap-x-2">
-              <p class="transition-all duration-300 ease-in-out cursor-pointer">Jurusan</p>
+              <p class="transition-all duration-300 ease-in-out cursor-pointer">Konsentrasi Keahlian</p>
               <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
                 class="w-[20px] transition-transform duration-300 ease-in-out group-hover:-rotate-90">
             </button>
