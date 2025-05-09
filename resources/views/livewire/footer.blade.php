@@ -27,12 +27,18 @@
             <div class='font-manrope text-[20px] w-[180px] cs5:w-[159px] cs6:w-[140px]'>
               <p class='font-medium text-[#030512] mb-2'>Menu</p>
               <div class='text-[#686971] text-[18px] flex flex-col gap-y-3'>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Beranda</p>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Tentang</p>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Konsentrasi Keahlian
-                </p>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Berita</p>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Prestasi</p>
+                <a href="#beranda"
+                  class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Beranda</a>
+                <a href="#tentang"
+                  class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Tentang</a>
+                <a href="#jurusan"
+                  class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer  text-wrap'>Konsentrasi
+                  Keahlian
+                </a>
+                <a href="#berita"
+                  class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Berita</a>
+                <a href="#prestasi"
+                  class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>Prestasi</a>
               </div>
             </div>
             <div class='font-manrope text-[20px] sm:h-[260px] w-[180px] cs5:w-[159px] cs6:w-[140px]'>
