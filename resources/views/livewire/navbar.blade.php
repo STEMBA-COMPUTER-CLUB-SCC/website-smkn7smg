@@ -118,7 +118,7 @@
           <button id="nav-jurusan-mobile"
             class="flex items-center justify-between gap-x-2 cursor-pointer py-3 px-4 rounded-[8px] w-full">
             <a href="/#jurusan">
-              <p class="transition-all duration-300 ease-in-out">Jurusan</p>
+              <p class="transition-all duration-300 ease-in-out">Konsentrasi Keahlian</p>
             </a>
             <img id="arrow-icon" loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
               class="w-[20px] transition-transform duration-300 ease-in-out">
@@ -143,9 +143,9 @@
                 class="group/dropmenu transition-all w-max h-[45px] flex items-center duration-200">
                 <p>KJIJ</p>
               </a>
-              <a id="tkp-mobile" href="/jurusan/kpbs"
+              <a id="tkp-mobile" href="/jurusan/kgs"
                 class="group/dropmenu transition-all w-max h-[45px] flex items-center duration-200">
-                <p>KPBS</p>
+                <p>KGS</p>
               </a>
               <a id="to-mobile" href="/jurusan/tkr"
                 class="group/dropmenu transition-all w-max h-[45px] flex items-center duration-200">
