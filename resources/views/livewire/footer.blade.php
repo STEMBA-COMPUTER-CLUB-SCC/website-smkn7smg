@@ -53,11 +53,10 @@
               </div>
             </div>
           </div>
-          <div
-            class='w-[292px] cs5:w-[318px] cs5:gap-y-[110px] sm:h-[266px] cs5:ml-auto cs5:mr-auto flex flex-col justify-between'>
-            <div class='font manrope mb-27.5'>
+          <div class='w-[292px] cs5:w-[318px] sm:h-[266px] cs5:ml-auto cs5:mr-auto flex flex-col justify-between'>
+            <div class='font manrope cs5:mb-12 mb-27.5'>
               <p class='font-medium text-[20px] text-[#030512] mb-2'>Kontak</p>
-              <p class='font-normal text-[18px] text-[#686971] mb-3'>mail@smkn7smg.sch.id</p>
+              <p class='font-normal text-[18px] text-[#686971] mb-3'>admin@smkn7semarang.sch.id</p>
               <p class='font-normal text-[18px] text-[#686971]'>(024) 8311532</p>
             </div>
             <div class='flex flex-row gap-x-2 cs5:w-max cs5:ml-auto cs5:mr-auto'>
@@ -88,7 +87,7 @@
       <hr class="mb-3">
       <p
         class='w-full cs7:w-[70vw] cs7:ml-auto cs7:mr-auto cs5:w-[226px] cs5:text-[14px] cs5:ml-auto cs5:mr-auto font-manrope font-medium text-[16px] border border-b-transparent border-l-transparent border-r-transparent border-t-transparent text-[#6B7280] text-center cs5:leading-[150%]'>
-        Copyright © 2025 Stemba Computer Club (SCC).</p>
+        Copyright © {{ date("Y"); }} SMKN 7 Semarang. Powered By Stemba Computer Club</p>
     </div>
   </div>
 </section>
