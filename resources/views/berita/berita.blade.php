@@ -21,7 +21,7 @@
   <meta property="og:description"
     content="Berita SMK Negeri 7 Semarang - Dapatkan informasi terkini tentang kegiatan, prestasi, dan acara di SMK Negeri 7 Semarang. Bergabunglah dengan kami untuk masa depan yang lebih baik!">
   <meta property="og:url" content="https://smkn7semarang.sch.id/">
-  <meta property="og:image" content="{{ asset('assets/image/image2.png') }}">
+  <meta property="og:image" content="{{ asset('assets/image/image2.webp') }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -30,7 +30,7 @@
   <meta name="twitter:title" content="Berita - SMK Negeri 7 Semarang">
   <meta name="twitter:description"
     content="Berita SMK Negeri 7 Semarang - Dapatkan informasi terkini tentang kegiatan, prestasi, dan acara di SMK Negeri 7 Semarang. Bergabunglah dengan kami untuk masa depan yang lebih baik!">
-  <meta name="twitter:image" content="{{ asset('assets/image/image2.png') }}">
+  <meta name="twitter:image" content="{{ asset('assets/image/image2.webp') }}">
 
   <!-- Favicon -->
   <link rel="icon" href="{{ asset('assets/logo/logo_stemba.png') }}" type="image/png">
@@ -93,7 +93,7 @@
   @livewireStyles
 </head>
 
-<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain">
+<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.webp)] bg-contain">
   @livewire('loader')
   @livewire('navbar')
   @livewire('pageberita')

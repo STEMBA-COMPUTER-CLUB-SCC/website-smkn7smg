@@ -21,7 +21,7 @@
   <meta property="og:description"
     content="Dapatkan informasi kontak SMKN 7 Semarang untuk pendaftaran, program pendidikan, dan layanan lainnya. Kami siap melayani Anda.">
   <meta property="og:url" content="https://smkn7semarang.sch.id/kontak">
-  <meta property="og:image" content="{{ asset('assets/image/image2.png') }}">
+  <meta property="og:image" content="{{ asset('assets/image/image2.webp') }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -30,7 +30,7 @@
   <meta name="twitter:title" content="Hubungi SMKN 7 Semarang - Informasi Kontak Lengkap">
   <meta name="twitter:description"
     content="Dapatkan informasi kontak SMKN 7 Semarang untuk pendaftaran, program pendidikan, dan layanan lainnya. Kami siap melayani Anda.">
-  <meta name="twitter:image" content="{{ asset('assets/image/image2.png') }}">
+  <meta name="twitter:image" content="{{ asset('assets/image/image2.webp') }}">
 
   <!-- Favicon -->
   <link rel="icon" href="{{ asset('assets/logo/logo_stemba.png') }}" type="image/png">
@@ -125,7 +125,7 @@
 </head>
 
 <body
-  class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] cs5:overflow-x-hidden ml-auto mr-auto bg-center bg-contain">
+  class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.webp)] cs5:overflow-x-hidden ml-auto mr-auto bg-center bg-contain">
   @livewire(name: 'loader')
   @livewire(name: 'navbar')
   @livewire(name: 'pagekontak')

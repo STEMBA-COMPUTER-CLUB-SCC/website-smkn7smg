@@ -21,7 +21,7 @@
   <meta property="og:description"
     content="Mewujudkan siswa berprestasi dan siap kerja melalui pendidikan berkualitas dan fasilitas lengkap. Daftar sekarang dan raih masa depan cerah!">
   <meta property="og:url" content="https://smkn7semarang.sch.id/">
-  <meta property="og:image" content="{{ asset('assets/image/image2.png') }}">
+  <meta property="og:image" content="{{ asset('assets/image/image2.webp') }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -30,7 +30,7 @@
   <meta name="twitter:title" content="SMKN 7 Semarang - Sekolah Unggul dan Berprestasi">
   <meta name="twitter:description"
     content="Mewujudkan siswa berprestasi dan siap kerja melalui pendidikan berkualitas dan fasilitas lengkap. Daftar sekarang dan raih masa depan cerah!">
-  <meta name="twitter:image" content="{{ asset('assets/image/image2.png') }}">
+  <meta name="twitter:image" content="{{ asset('assets/image/image2.webp') }}">
 
   <!-- Favicon -->
   <link rel="icon" href="{{ asset('assets/logo/logo_stemba.png') }}" type="image/png">
@@ -83,7 +83,7 @@
 </head>
 
 <body
-  class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] max-sm:overflow-x-hidden bg-center bg-contain">
+  class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.webp)] max-sm:overflow-x-hidden bg-center bg-contain">
   @livewire(name: 'loader')
   @livewire(name: 'navbar')
   @livewire(name: 'landingberanda')

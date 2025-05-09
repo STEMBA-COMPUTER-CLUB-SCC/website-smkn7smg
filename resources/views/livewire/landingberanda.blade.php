@@ -32,7 +32,7 @@
     <div class="w-max h-max relative cs5:ml-auto cs5:mr-auto cs7:hidden">
       <img loading="lazy" draggable="false"
         class="imageBeranda cs5:opacity-0 transition-all duration-300 w-[466px] cs5:w-[258px] 2xl:w-[646px] m-0 mb-4 cs7:w-[300px]"
-        src="/assets/image/image1.png" alt="">
+        src="/assets/image/image1.webp" alt="">
       <div
         class="welcomeBeranda1 opacity-0 flex flex-col absolute bottom-16 cs5:bottom-0 cs5:right-0 cs5:items-center cs5:ml-auto cs5:mr-auto cs5:w-full right-16 2xl:right-[78px] gap-y-2.5 cs5:gap-y-1.5 cs7:right-0">
         <p

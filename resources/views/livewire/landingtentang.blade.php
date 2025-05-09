@@ -37,7 +37,7 @@
       <div
         class="h-[496px] 2xl:h-[651px] 2xl:w-[1113px] w-[848px] cs5:w-[327px] transition-all duration-300 cs5:h-[276px] rounded-[24px] relative overflow-hidden cs3:w-[750px] cs6:w-[688px] cs6:h-[496px] cs7:w-[347px] cs7:h-[346px] cs7:rouneded-[24px]">
         <div id="thumbnailContainer"
-          class="w-full h-full bg-[url(/assets/image/image2.png)] cs5:bg-center bg-cover absolute top-0 left-0 transition-discrete duration-300 ease-in-out opacity-100">
+          class="w-full h-full bg-[url(/assets/image/image2.webp)] cs5:bg-center bg-cover absolute top-0 left-0 transition-discrete duration-300 ease-in-out opacity-100">
           <div id="competencyLabel"
             class="flex items-center bg-[#ffffff] gap-x-3 2xl:gap-x-4 w-max pt-2 2xl:pt-3 pb-2 2xl:pb-3 pl-3 2xl:pl-4 pr-5 2xl:pr-8 rounded-[70px] absolute top-5 left-5 2xl:top-6 2xl:left-6 transition duration-300 ease-in-out translate-y-0 opacity-100">
             <img loading="lazy" draggable="false" src="/assets/icon/konsentrasi.svg" alt=""

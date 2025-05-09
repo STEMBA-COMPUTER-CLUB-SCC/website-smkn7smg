@@ -28,7 +28,7 @@
   @livewireStyles
 </head>
 
-<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain bg-center">
+<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.webp)] bg-contain bg-center">
   @livewire('loader')
   @livewire('navbar')
   @livewire('detailprestasi', ['id' => $id])

@@ -9,7 +9,7 @@
     <div
       class="cs5:hidden transition-all relative w-full mr-auto ml-auto h-[640px] bg-[url(/assets/image/partner.png)] bg-no-repeat bg-contain bg-center 2xl:bg-contain 2xl:w-[90.625vw] 2xl:h-[725px] cs6:w-[1200px] cs7:w-[800px] cs7:h-[470px] cs8:w-full">
     </div>
-    <img loading="lazy" draggable="false" src="/assets/image/image3.png"
+    <img loading="lazy" draggable="false" src="/assets/image/image3.webp"
       class="cs5:hidden w-screen h-[400px] absolute bottom-0" alt="">
   </div>
   <div
@@ -18,7 +18,7 @@
   <div class='w-full bg-[#F7FAFF] pt-20 pb-20 h-[719px] cs5:h-[854px] cs7:h-[654px]'>
     <div
       class='w-[1280px] transition-all duration-300 cs5:w-[351px] cs5:h-[744px] h-[559px] bg-[#FFFFFF] relative bg-[url(/assets/image/Hero-Image-Container2.png)] border border-[#E7E7E7] ml-auto mr-auto rounded-[12px] bg-cover bg-center 2xl:w-[1800px] 2xl:h-[610px] cs2:w-[1600px] cs4:w-[1480px] cs6:w-[1120px] cs6:h-[478px] cs7:w-[851px] cs7:h-[484px] cs8:w-[580px]'>
-      <img loading="lazy" draggable="false" src="/assets/image/image4.png"
+      <img loading="lazy" draggable="false" src="/assets/image/image4.webp"
         class='cs5:hidden 2xl:hidden transition-all duration-300 gambarKontak opacity-0 w-[669px] absolute bottom-0 cs5:w-[351px] cs5:rounded-bl-[12px] right-0 rounded-br-[12px] cs6:w-[540px] cs6:h-[390px] cs7:hidden'
         alt="">
       <img loading="lazy" draggable="false" src="/assets/image/image5.png"

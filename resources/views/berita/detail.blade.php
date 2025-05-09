@@ -47,7 +47,7 @@
   @livewireStyles
 </head>
 
-<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.png)] bg-contain">
+<body class="bg-[#ffffff] bg-[url(/assets/image/Hero-Image-Container.webp)] bg-contain">
   @livewire('loader')
   @livewire('navbar')
   @livewire('detailberita', ['id' => $id])
