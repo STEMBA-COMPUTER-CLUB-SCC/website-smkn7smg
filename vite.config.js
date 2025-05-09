@@ -11,6 +11,7 @@ export default defineConfig({
       input: [
         ...globSync("resources/js/**/*.js").map((file) => path.resolve(file)),
         ...globSync("resources/css/**/*.css").map((file) => path.resolve(file)),
+        ...globSync("resources/assets/**/*").map((file) => path.resolve(file)),
       ],
       refresh: true,
     }),

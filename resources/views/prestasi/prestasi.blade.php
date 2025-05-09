@@ -2,9 +2,45 @@
 <html lang="id" class="scroll-smooth">
 
 <head>
+  <!-- Basic Meta Tags -->
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prestasi SMK Negeri 7 Semarang</title>
+
+  <title>Prestasi - SMK Negeri 7 Semarang</title>
+  <meta name="description"
+    content="Prestasi SMK Negeri 7 Semarang - Raih prestasi gemilang di berbagai bidang akademik dan non-akademik. Bergabunglah dengan kami untuk masa depan yang lebih baik!">
+  <meta name="keywords"
+    content="prestasi SMK Negeri 7 Semarang, prestasi akademik, prestasi non-akademik, siswa berprestasi, pendidikan berkualitas, prestasi siswa, penghargaan, kompetisi, lomba">
+  <meta name="author" content="SMKN 7 Semarang">
+  <link rel="canonical" href="https://smkn7semarang.sch.id/">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prestasi - SMK Negeri 7 Semarang">
+  <meta property="og:description"
+    content="Prestasi SMK Negeri 7 Semarang - Raih prestasi gemilang di berbagai bidang akademik dan non-akademik. Bergabunglah dengan kami untuk masa depan yang lebih baik!">
+  <meta property="og:url" content="https://smkn7semarang.sch.id/">
+  <meta property="og:image" content="{{ asset('assets/image/image2.png') }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prestasi - SMK Negeri 7 Semarang">
+  <meta name="twitter:description"
+    content="Prestasi SMK Negeri 7 Semarang - Raih prestasi gemilang di berbagai bidang akademik dan non-akademik. Bergabunglah dengan kami untuk masa depan yang lebih baik!">
+  <meta name="twitter:image" content="{{ asset('assets/image/image2.png') }}">
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ asset('assets/logo/logo_stemba.png') }}" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/logo/logo180.svg') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/logo/logo32.svg') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/logo/logo16.svg') }}">
+
+  <!-- Robots Meta Tag -->
+  <meta name="robots" content="index, follow">
+
   @vite('resources/css/app.css')
   {{-- @vite('resources/css/scrollbar.css') --}}
   <script src="https://cdn.tailwindcss.com"></script>
