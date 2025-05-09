@@ -36,7 +36,7 @@
               </div>
             </div>
             <div class='font-manrope text-[20px] sm:h-[260px] w-[180px] cs5:w-[159px] cs6:w-[140px]'>
-              <p class='font-medium text-[#030512] mb-2'>Jurusan</p>
+              <p class='font-medium text-[#030512] mb-2'>Konsentrasi Keahlian</p>
               <div class='text-[#686971] text-[18px] flex flex-col gap-y-3'>
                 <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>PPLG</p>
                 <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>KPBS</p>
