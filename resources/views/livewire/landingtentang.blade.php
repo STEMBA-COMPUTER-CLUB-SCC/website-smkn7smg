@@ -24,7 +24,7 @@
       <div
         class="absolute bottom-0 bg-[#ffffff] rounded-[16px] pl-3 2xl:pl-4 pt-3 2xl:pt-4 pb-3 2xl:pb-4 pr-6.5 ml-5 mr-5 mb-5 cs7:w-[310px]">
         <p
-          class="font-manrope text-[18px] cs5:text-[14px] 2xl:text-[24px] font-medium text-[#111111] xl:text-[#ffffff] m-0 mb-0.5 cs5:mb-2 2xl:mb-2 cs7:text-[14px]">
+          class="font-manrope text-[18px] cs5:text-[14px] 2xl:text-[24px] font-medium text-[#111111] xl:text-[#111111] m-0 mb-0.5 cs5:mb-2 2xl:mb-2 cs7:text-[14px]">
           Masjid Al - Adab SMKN 7 Semarang
         </p>
         <p
