@@ -1,9 +1,9 @@
 <section id="footer" class="border border-transparent cs5:overflow-hidden">
-  <div class='bg-[#FFFFFF] border border-transparent h-[514px] cs5:h-[1050px] w-full'>
+  <div class='bg-[#FFFFFF] border border-transparent h-max cs5:h-[1050px] w-full'>
     <div
       class='h-[434px] w-[1280px] cs5:w-screen ml-auto mr-auto mt-[40px] cs6:w-[1120px] cs7:w-max xxl:w-[1800px] cs2:w-[1600px]'>
       <div
-        class='flex cs5:flex-col sm:items-end justify-between mb-14 cs7:flex-col cs7:items-start cs7:gap-y-10 cs7:ml-auto cs7:mr-auto cs7:w-[70vw]'>
+        class='flex cs5:flex-col sm:items-end justify-between mb-28 cs7:flex-col cs7:items-start cs7:gap-y-10 cs7:ml-auto cs7:mr-auto cs7:w-[70vw]'>
         <div class='w-[524px] cs5:w-[327px] cs5:ml-auto cs5:mr-auto'>
           <img src="/assets/image/logo-stemba.png" class='w-[76px] mb-8' alt="">
           <p class='font-inter text-[#111111] font-semibold text-[23px] cs5:text-[22px] mb-4 w-max'>SMKN 7 SEMARANG</p>
@@ -44,12 +44,14 @@
             <div class='font-manrope text-[20px] sm:h-[260px] w-[180px] cs5:w-[159px] cs6:w-[140px]'>
               <p class='font-medium text-[#030512] mb-2'>Konsentrasi Keahlian</p>
               <div class='text-[#686971] text-[18px] flex flex-col gap-y-3'>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>PPLG</p>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>KPBS</p>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>TKP</p>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>TE</p>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>TPFL</p>
-                <p class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>TK</p>
+                <a href="/jurusan/sija" class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>SIJA</a>
+                <a href="/jurusan/kjij" class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>KJIJ</a>
+                <a href="/jurusan/kgs" class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>KGS</a>
+                <a href="/jurusan/tkr" class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>TKR</a>
+                <a href="/jurusan/tek" class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>TEK</a>
+                <a href="/jurusan/tme" class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>TME</a>
+                <a href="/jurusan/tflm" class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>TFLM</a>
+                <a href="/jurusan/titl" class='transition-all duration-300 hover:text-[#1152D9] cursor-pointer w-max'>TITL</a>
               </div>
             </div>
           </div>
