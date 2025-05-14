@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else if (entry.target.classList.contains("gambarKontak")) {
                     gsap.fromTo(entry.target, 
                         { opacity: 0, y: 10 }, 
-                        { opacity: 1, y: 0, duration: 3, ease: "power2.out" }
+                        { opacity: 1, y: 0, duration: 1, ease: "power2.out" }
                     );
                 }                
                 observer.unobserve(entry.target); 

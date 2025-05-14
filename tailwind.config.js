@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindcss from '@tailwindcss/vite'
 module.exports = {
     content: [
       "./resources/**/*.blade.php",
@@ -10,5 +11,6 @@ module.exports = {
     },
     plugins: [
       require("@designbycode/tailwindcss-text-stroke"),
+      tailwindcss(),
     ],
   }

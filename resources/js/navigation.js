@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   arrowIcon.addEventListener("click", () => {
     dropdownMenu.classList.toggle("h-[315px]");
-    arrowIcon.classList.toggle("-rotate-90");
+    arrowIcon.classList.toggle("-rotate-45");
   });
   closeSidebar.addEventListener("click", () => {
     if (sidebarMobile.classList.contains("translate-x-[0px]")) {

@@ -92,10 +92,10 @@
         </div>
         <div class="flex flex-col gap-y-3 ">
           <p class="font-manrope font-semibold text-[16px] text-[#111111] cs5:text-[12px]">NOMOR TELEPON</p>
-          <div class="flex flex-row justify-between cs5:w-[287px]">
+          <div class="flex flex-row justify-between cs5:w-[287px] cs5:gap-x-2 cs5:justify-normal">
             <div class="relative">
               <div wire:click="toggleDropdown"
-                class="flex flex-row gap-x-3 items-center py-2 px-4 w-max rounded-[16px] justify-center bg-[#FFFFFF] border border-[#EBEBEB] cursor-pointer cs5:w-[80px] cs5:gap-x-1">
+                class="flex flex-row gap-x-3 items-center py-2 px-4 w-max rounded-[16px] justify-center bg-[#FFFFFF] border border-[#EBEBEB] cursor-pointer cs5:w-[62px] cs5:h-[48px] cs5:gap-x-1 cs5:px-0 cs5:py-0">
                 <div
                   class="bg-[url({{ $selectedFlag }})] size-[30px] cs5:size-[24px] rounded-full bg-cover bg-center border border-[#EBEBEB] flag">
                 </div>
@@ -125,8 +125,8 @@
               </div>
             </div>
             <div
-              class="bg-[#ffffff] w-[444px] h-[48px] rounded-[16px] flex flex-row items-center gap-x-4 pl-5 border border-[#EBEBEB] focus-within:border-[#1152D9] transition-all duration-300 ease-in-out cs7:w-[280px] cs5:w-full">
-              <p class="font-semibold font-manrope text-[#727272]">{{ $selectedCountryCode }}</p>
+              class="bg-[#ffffff] w-[444px] h-[48px] rounded-[16px] flex flex-row items-center gap-x-4 pl-5 border border-[#EBEBEB] focus-within:border-[#1152D9] transition-all duration-300 ease-in-out cs7:w-[280px] cs5:w-[178px] cs5:pl-1 cs5:gap-x-2">
+              <p class="font-semibold font-manrope text-[#727272] cs5:text-[12px]">{{ $selectedCountryCode }}</p>
               <input wire:model.live="phoneNumber" type="number" placeholder="Masukkan nomor telepon" id="phoneNumber"
                 class="text-[#727272] text-[16px] w-[350px] focus:outline-none focus:border-none cs7:w-full cs5:text-[12px] cs5:w-full">
               <input type="hidden" name="phoneNumber" value="{{ $fullPhoneNumber }}">
@@ -134,13 +134,13 @@
           </div>
         </div>
         <div class="flex flex-col gap-y-3 mb-3">
-          <p class="font-manrope font-semibold text-[16px] text-[#111111]">PESAN</p>
+          <p class="font-manrope font-semibold text-[16px] text-[#111111] cs5:text-[12px]">PESAN</p>
           <div class="relative focus-within:border rounded-lg w-full">
             <textarea id="autoResize"
-              class="focus-within:border-[#1152D9] transition-all duration-300 ease-in-out w-full min-h-[128px] h-auto overflow-hidden resize-none border border-[#EBEBEB] rounded-lg p-3 pr-12 pb-8 focus:outline-none"
+              class="focus-within:border-[#1152D9] transition-all duration-300 ease-in-out w-full min-h-[128px] h-auto overflow-hidden resize-none border border-[#EBEBEB] rounded-lg p-3 pr-12 pb-8 focus:outline-none cs5:text-[12px]"
               placeholder="Tulis pesanmu di sini.." maxlength="300" name="message"></textarea>
             <div id="charCount"
-              class="absolute flex flex-row w-[525px] justify-between bottom-3 left-3 text-gray-500 text-sm pointer-events-none items-center">
+              class="absolute flex flex-row w-[525px] justify-between bottom-3 left-3 text-gray-500 text-sm pointer-events-none items-center cs5:text-[12px]">
               <p id="charCounter">300/300</p>
               <img src="/assets/icon/resize.png" draggable="false"
                 class=" size-[20px] pointer-events-auto cursor-nwse-resize relative cs7:-translate-x-[170px] cs5:-translate-x-[300px]"
@@ -149,7 +149,7 @@
           </div>
         </div>
         <input type="submit" value="Kirim Pesan"
-          class="bg-[#1152D9] text-manrope text-[#FFFFFF] text-[16px] font-semibold w-full py-5 rounded-[16px] hover:bg-[#007FFF] transition-all duration-300 ease-in-out hover:cursor-pointer">
+          class="bg-[#1152D9] text-manrope text-[#FFFFFF] text-[16px] font-semibold w-full py-5 rounded-[16px] hover:bg-[#007FFF] transition-all duration-300 ease-in-out hover:cursor-pointer cs5:text-[14px]">
       </form>
     </div>
   </div>

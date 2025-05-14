@@ -24,7 +24,7 @@
             <button id="nav-jurusan" class="flex items-center gap-x-2">
               <p class="transition-all duration-300 ease-in-out cursor-pointer">Konsentrasi Keahlian</p>
               <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
-                class="w-[20px] transition-transform duration-300 ease-in-out group-hover:-rotate-90">
+                class="w-[20px] transition-transform duration-300 ease-in-out group-hover:-rotate-45">
             </button>
           </a>
           <div
@@ -33,49 +33,49 @@
               class="group/dropmenu transition-all duration-200 flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
               <p>SIJA</p>
               <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
-                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-90">
+                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-45">
             </a>
             <a id="kpbs-desktop" href="/jurusan/kjij"
               class="group/dropmenu transition-all duration-200 flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
               <p>KJIJ</p>
               <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
-                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-90">
+                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-45">
             </a>
             <a id="tkp-desktop" href="/jurusan/kgs"
               class="group/dropmenu transition-all duration-200 flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
               <p>KGS</p>
               <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
-                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-90">
+                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-45">
             </a>
             <a id="to-desktop" href="/jurusan/tkr"
               class="group/dropmenu transition-all duration-200 flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
               <p>TKR</p>
               <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
-                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-90">
+                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-45">
             </a>
             <a id="tek-desktop" href="/jurusan/tek"
               class="group/dropmenu transition-all duration-200 flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
               <p>TEK</p>
               <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
-                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-90">
+                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-45">
             </a>
             <a id="tme-desktop" href="/jurusan/tme"
               class="group/dropmenu transition-all duration-200 flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
               <p>TME</p>
               <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
-                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-90">
+                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-45">
             </a>
             <a id="tpfl-desktop" href="/jurusan/tflm"
               class="group/dropmenu transition-all duration-200 flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
               <p>TFLM</p>
               <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
-                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-90">
+                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-45">
             </a>
             <a id="tk-desktop" href="/jurusan/titl"
               class="group/dropmenu transition-all duration-200 flex w-[183px] bg-[#F7F7F7] hover:bg-[#ffffff] hover:text-[#1152D9] justify-between px-3 py-2.5">
               <p>TITL</p>
               <img loading="lazy" draggable="false" src="/assets/icon/arrow-down.svg" alt=""
-                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-90">
+                class="w-[18px] rotate-270 opacity-0 group-hover/dropmenu:opacity-100 group-hover/dropmenu:-rotate-45">
             </a>
           </div>
         </div>

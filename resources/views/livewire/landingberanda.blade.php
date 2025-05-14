@@ -36,10 +36,10 @@
       <div
         class="welcomeBeranda1 opacity-0 flex flex-col absolute bottom-16 cs5:bottom-0 cs5:right-0 cs5:items-center cs5:ml-auto cs5:mr-auto cs5:w-full right-16 2xl:right-[78px] gap-y-2.5 cs5:gap-y-1.5 cs7:right-0">
         <p
-          class="pt-3 cs5:pt-[6.64px] 2xl:pt-4 pb-3 cs5:pb-[6.64px] 2xl:pb-4 pl-4 cs5:pl-[8.85px] 2xl:pl-6 pr-4 cs5:pr-[8.85px] 2xl:pr-6 cs5:rounded-[33.18px] rounded-[60px] font-manrope font-medium cs5:text-[8.85px] text-[16px] 2xl:text-[22px] cs5:w-[238.7px] w-max bg-[#FFFFFF] drop-shadow-lg relative right-14 cs5:right-0 2xl:right-[78px] cs6:text-[15px] cs7:text-[12px]">
+          class="pt-3 cs5:pt-[6.64px] 2xl:pt-4 pb-3 cs5:pb-[6.64px] 2xl:pb-4 pl-4 cs5:pl-[8.85px] 2xl:pl-6 pr-4 cs5:pr-[8.85px] 2xl:pr-6 cs5:rounded-[33.18px] rounded-[60px] font-manrope font-normal cs5:text-[8.85px] text-[16px] 2xl:text-[22px] cs5:w-[238.7px] w-max bg-[#FFFFFF] drop-shadow-lg relative right-14 cs5:right-0 2xl:right-[78px] cs6:text-[15px] cs7:text-[12px]">
           📗 Peningkatan Literasi dengan Perpustakaan Digital</p>
         <p
-          class="pt-3 cs5:pt-[6.64px] 2xl:pt-4 pb-3 cs5:pb-[6.64px] 2xl:pb-4 pl-4 cs5:pl-[8.85px] 2xl:pl-6 pr-4 cs5:pr-[8.85px] 2xl:pr-6 cs5:rounded-[33.18px] rounded-[60px] font-manrope font-medium cs5:text-[8.85px] text-[16px] 2xl:text-[22px] cs5:w-[240.7px] w-max bg-[#FFFFFF] drop-shadow-lg cs6:text-[15px] cs7:text-[12px] ">
+          class="pt-3 cs5:pt-[6.64px] 2xl:pt-4 pb-3 cs5:pb-[6.64px] 2xl:pb-4 pl-4 cs5:pl-[8.85px] 2xl:pl-6 pr-4 cs5:pr-[8.85px] 2xl:pr-6 cs5:rounded-[33.18px] rounded-[60px] font-manrope font-normal cs5:text-[8.85px] text-[16px] 2xl:text-[22px] cs5:w-[240.7px] w-max bg-[#FFFFFF] drop-shadow-lg cs6:text-[15px] cs7:text-[12px] ">
           🧔 Ketahanan Sekolah dengan Pembentukan Karakter</p>
       </div>
     </div>
